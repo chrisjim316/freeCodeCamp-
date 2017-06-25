@@ -8,7 +8,7 @@ This repository serves to keep a record of every project I created and every les
 * [01-HTML5-CSS](https://github.com/chrisjim316/freeCodeCamp-/tree/master/01-HTML5-CSS)
 * [02-Responsive-Design-With-Bootstrap](https://github.com/chrisjim316/freeCodeCamp-/tree/master/02-Responsive-Design-with-BootStrap) 
 * [03-jQuery](https://github.com/chrisjim316/freeCodeCamp-/tree/master/03-jQuery) 
-* 04-Basic-FE-Projects
+* [04-Basic-FE-Projects](https://github.com/chrisjim316/freeCodeCamp-/tree/master/04-Basic-FE-Projects/Tribute-Page)
 * 05-JavaScript
 * 06-OOP-FP
 * 07-Basic-Algorithm-Scripting
