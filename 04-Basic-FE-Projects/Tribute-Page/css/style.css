@@ -1,0 +1,12 @@
+.header {
+  font-size: 60px;
+  font-family: Monospace;
+  background-color: blue; 
+  color: white;
+}
+
+body {
+  margin-top: 20px; 
+  text-align: center; 
+}
+
