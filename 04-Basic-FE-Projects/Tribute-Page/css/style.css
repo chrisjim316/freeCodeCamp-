@@ -27,6 +27,8 @@ body {
 ul { 
   font-size: 17px;
   text-align: left;
+  list-style-image: 
+  url('https://github.com/chrisjim316/freeCodeCamp-/blob/master/Assets/Images/TributePage/ComputerIconExtraSmall.png?raw=true');
   margin-left: 150px;
   margin-right: 150px;
 }
