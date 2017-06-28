@@ -24,4 +24,10 @@ body {
   background-color: silver; 
   text-align: center; 
 }
+ul { 
+  font-size: 17px;
+  text-align: left;
+  margin-left: 150px;
+  margin-right: 150px;
+}
 
