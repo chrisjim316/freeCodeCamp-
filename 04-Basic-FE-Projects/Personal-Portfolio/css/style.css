@@ -1,7 +1,7 @@
 .pageOne {
   background:url("http://picknotebook.com/blog/wp-content/uploads/2015/11/best-laptop-for-programming.jpg");
   background-size: cover;
-  height: 1000px; 
+  height: 800px; 
 }
 
 .btnList {
@@ -14,3 +14,21 @@ body {
   background-color: white;
   color: white;
 }
+
+.btn-linkedin {
+	  background: #0E76A8;
+	  border-radius: 10px;
+	  color: #fff;
+	  border-width: 1px;
+	  border-style: solid;
+	  border-color: #084461;
+}
+
+h1 {
+  padding: 0;
+  margin-top: 0px;
+  font-size: 5.0em;
+}
+
+
+
