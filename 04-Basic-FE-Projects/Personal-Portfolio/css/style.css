@@ -1,18 +1,51 @@
+body {
+  margin-top: 50px;
+  background-color: white;
+  color: white;
+}
+
 .pageOne {
   background:url("http://picknotebook.com/blog/wp-content/uploads/2015/11/best-laptop-for-programming.jpg");
   background-size: cover;
   height: 800px; 
 }
 
-.btnList {
-  position: absolute;
-  top: 50%; 
+.pageTwo {
+  background:url("https://user-images.githubusercontent.com/26378494/27760489-27e29304-5e7b-11e7-9046-764748e56fab.jpg");
+  background-size: cover;
+  height: 1000px;
+  padding-top: 10px;
 }
 
-body {
-  margin-top: 45px;  
-  background-color: white;
-  color: white;
+.pageThree {
+  background-color: silver;
+  height: 1500px;
+  padding-top: 10px;
+}
+
+.pageFour {
+  background:url("http://unsplash.com/photos/ZItuB3bb8aE/download?force=true");
+  background-size: cover;
+  height: 350px;
+  padding-top: 10px;
+}
+
+.btnList {
+  display: block;
+  width: 100%;
+  top: 400px;
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+}
+
+.bottomBtnList {
+  display: block;
+  width: 100%;
+  top: 3500px;
+  bottom: 0;
+  position: absolute;
+  text-align: center;
 }
 
 .btn-linkedin {
@@ -24,11 +57,74 @@ body {
 	  border-color: #084461;
 }
 
-h1 {
-  padding: 0;
-  margin-top: 0px;
-  font-size: 5.0em;
+.btn-quora {
+    background: #cc0000;
+    border-radius: 10px;
+    color: white; 
+    border-width: 1px;
+    border-style: solid;
+	  border-color: #084461;
 }
 
+.btn-github {
+    background-color: #4d0066;
+    border-radius: 10px;
+    color: white; 
+    border-width: 1px;
+    border-style: solid;
+	  border-color: #084461;
+}
 
+.btn-email {
+    background-color: #141f1f;
+    border-radius: 10px;
+    color: white; 
+    border-width: 1px;
+    border-style: solid;
+	  border-color: #084461;
+}
+
+.btn-free-code-camp {
+    background-color: #006600;
+    border-radius: 10px;
+    color: white; 
+    border-width: 1px;
+    border-style: solid;
+	  border-color: #084461;
+}
+
+h1 {
+  padding-top: 10px;
+  font-size: 7.0em;
+  font-family: Lobster;
+}
+
+h3 {
+  font-size: 2.5em;
+  font-family: Lobster;
+}
+
+.transBlock {
+  background-color: black;
+  opacity: .7;
+  padding-bottom: 10px;
+  width: 650px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 15px;
+  position: relative;
+  top: 140px;
+}
+
+footer {
+  background-color: black;
+  color: gray;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  width: 100%;
+  bottom: 0;
+  position: relative;
+  text-align: center;
+}
 
