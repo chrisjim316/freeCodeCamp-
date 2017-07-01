@@ -20,9 +20,10 @@ This repository serves to keep a record of every project I created and every les
 * My Front End Development Certification
 
 ## Projects
-* [Tribute Page](https://codepen.io/liljimbos/pen/eReeMM) 
 * [Personal-Portfolio](https://codepen.io/liljimbos/full/RgxryK)
 ![PP](https://github.com/chrisjim316/freeCodeCamp-/blob/master/Assets/Images/Personal-Portfolio/Intro.JPG?raw=true)
+* [Tribute Page](https://codepen.io/liljimbos/pen/eReeMM) 
+![AlanTuringTP](https://github.com/chrisjim316/freeCodeCamp-/blob/master/Assets/Images/TributePage/Intro.JPG?raw=true) 
 
 
 ### LICENSE 
