@@ -19,6 +19,9 @@ This repository serves to keep a record of every project I created and every les
 * 12-Advanced-FE-Projects
 * My Front End Development Certification
  
+### Projects 
+[Personal-Portfolio](https://codepen.io/liljimbos/full/RgxryK)
+![PP](https://github.com/chrisjim316/freeCodeCamp-/blob/master/Assets/Images/Personal-Portfolio/Intro.JPG?raw=true)
 
 
 ### LICENSE 
