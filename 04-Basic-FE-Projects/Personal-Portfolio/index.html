@@ -1,6 +1,8 @@
 <header> 
-  <!-- import Lobster font from google fronts --> 
+  <!-- import Lobster font from google fonts --> 
   <link href='http://fonts.googleapis.com/css?family=Lobster&effect=font-effect-outline' rel='stylesheet'   type='text/css'>
+  <!-- import Athiti font from google fonts -->  
+  <link href="https://fonts.googleapis.com/css?family=Athiti" rel="stylesheet">
   <!-- importing font awesome icons --> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </header>
@@ -9,7 +11,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".myNavbar">
@@ -17,21 +19,21 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Chris Jim</a>
+      <a class="navbar-brand scroll" href="#home">Chris Jim</a>
      </div>
      <div class="collapse navbar-collapse myNavbar">
        <ul class="nav navbar-nav navbar-right">
-         <li class="active"><a href="#home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-         <li><a href="#experience"><span class="glyphicon glyphicon-user"></span> Experience</a></li>
-         <li><a href="#portfolio"><span class="glyphicon glyphicon-briefcase"></span> Portfolio</a></li>
-         <li><a href="#contact"><span class="glyphicon glyphicon-globe"></span> Contact</a></li>
+         <li class="active"><a href="#home" class="scroll"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+         <li><a href="#about" class="scroll"><span class="glyphicon glyphicon-user"></span> About </a></li> 
+         <li><a href="#experience" class="scroll"><span class="glyphicon glyphicon-road"></span> Experience</a></li>
+         <li><a href="#portfolio" class="scroll"><span class="glyphicon glyphicon-briefcase"></span> Portfolio</a></li>
+         <li><a href="#contact" class="scroll"><span class="glyphicon glyphicon-globe"></span> Contact</a></li>
        </ul>
      </div>
   </div>
 </nav>
   
 <!-- Section 1 -->
-
   <section class="pageOne text-center" id="home">
     <div class="transBlock text-center">
       <h1> Chris Jim </h1>
@@ -47,24 +49,88 @@
   </section>
   
 <!-- Section 2 --> 
-  <section class="pageTwo" id="experience">
-    <div>
-      <h1 class="text-center"> My Experience </h1> 
+  <section class="pageTwo" id="about">
+    <div class="self-intro">
+      <hr>
+      <p> I fell in love with programming when I was 17 and have been self-learning ever since.</p>
+      <hr>
     </div>
+    <div class="text-center">
+      <h1 style="color:black; top:20px;"><strong> Technical Skills </strong></h1>  
+    </div> 
+    <h2 class="text-center" style="font-size:5.0em; padding-bottom:30px;"><strong> Languages: </strong></h2> 
+    <div class="row text-center" style="font-size:2.0em;">
+      <div class="skill skillLabel"><strong> Proficient: </strong></div>  
+        <div class="skill" style="color:white;"><a href="https://github.com/chrisjim316/JavaWorkspace" target="_blank"> Java </a>
+        </div>
+        <div class="skill"> HTML5 </div> 
+        <div class="skill"> CSS </div> 
+    </div> 
+    <div class="row text-center" style="font-size:2.0em;">
+      <div class="skill skillLabel"><strong> Familiar: </strong></div>  
+        <div class="skill"> Swift </div>
+        <div class="skill"> JavaScript </div> 
+    </div> 
+    <div class="row text-center" style="font-size:2.0em;">
+      <div class="skill skillLabel"><strong> Beginner: </strong></div>  
+        <div class="skill"> Python </div>
+        <div class="skill"> C++ </div>
+    </div> 
+    <h2 class="text-center" style="font-size:5.0em; padding-bottom:30px;"><strong> Frameworks / Libraries: </strong></h2>
+    <div class="row text-center" style="font-size:2.0em;">
+      <div class="skill"> jQuery </div> 
+      <div class="skill"> Bootstrap </div>
+    </div> 
+    <h2 class="text-center" style="font-size:5.0em; padding-bottom:30px;"><strong> Platforms: </strong></h2>
+    <div class="row text-center" style="font-size:2.0em;">
+      <div class="skill"> iOS </div> 
+      <div class="skill"> Web </div>
+    </div> 
+    <h2 class="text-center" style="font-size:5.0em; padding-bottom:30px;"><strong> Tools: </strong></h2>
+    <div class="row text-center" style="font-size:2.0em;">
+      <div class="skill"> Git </div> 
+      <div class="skill"> XCode </div>
+      <div class="skill"> BlueJ </div> 
+    </div> 
   </section>
 
 <!-- Section 3 --> 
-  <section class="pageThree" id="portfolio">
-    <div>
-      <div id="particles-js">
-        <h1 class="text-center"> Portfolio </h1>
+  <section class="pageThree" id="experience">
+    <h1 class="text-center"> My Experience </h1> 
+      <div style="position:relative; left:30%; top:50px;"> 
+        <a class="btn btn-free-code-camp btn-lg" href="https://www.freecodecamp.com/chrisjim316" target="_blank" title="freeCodeCamp"><i class="fa fa-5x fa-free-code-camp"></i></a>
+        <h2>Freelance Web Developer 2017-Present</h2>
+        <a class="btn btn-github btn-lg" href="https://github.com/chrisjim316" target="_blank" title="GitHub"><i class="fa fa-5x fa-github"></i></a>
+        <h2>Open Source Developer 2017-Present</h2>
+        <img src="https://github.com/chrisjim316/Personal-Portfolio-/blob/master/Images/BigNerdRanchLogo.jpeg?raw=true" alt="BigNerdRanch" id="bigNerdRanch"></a>
+        <h2>iOS Developer 2017-Present</h2>
+      </div>
+  </section>
+  
+<!-- Section 4 -->   
+  <section class="pageFour" id="portfolio">
+    <div id="particles-js">
+      <h1 class="text-center"> Portfolio </h1>
+      <div>
+        <h2 class="text-center" style="position:relative; top:-10px;" id="projectLabel"> WORLDTROTTER </h2>
+        <div class="worldTrotter">
+          <ul style="width:550px;"> 
+            <li> 
+              This app contains multiple views(tabs). One view converts values between degrees Fahrenheit and degrees Celsius, one displays the world map, and the other displays web view.
+            </li>
+            <li>
+              All views are localized in three distinct languages (English, Chinese, Spanish).
+            </li>
+          </ul>
+        </div>
+        <img src="https://github.com/chrisjim316/Personal-Portfolio-/blob/master/Images/TransWorldTrotter.png?raw=true" alt="WorldTrotter" id="worldTrotter">
       </div>
     </div>
   </section> 
   
-<!-- Section 4 -->   
-  <section class="pageFour" id="contact">
-    <h1 class="text-center"> Contact Me </h1>
+<!-- Section 5 -->  
+  <section class="pageFive" id="contact">
+    <h1 class="text-center"> Say Hello to Me </h1>
     <div class="bottomBtnList">
       <a class="btn btn-email btn-lg" href="mailto:chrisjim316@gmail.com" title="Email"><i class="fa fa-2x fa-envelope"></i></a>
       <a class="btn btn-linkedin btn-lg" href="https://www.linkedin.com/in/chris-jim-77b090128/" target="_blank" title="LinkedIn"><i class="fa fa-2x fa-linkedin"></i></a>
