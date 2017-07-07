@@ -19,6 +19,9 @@ This repository serves to keep a record of every project I created and every les
 * 12-Advanced-FE-Projects
 * My Front End Development Certification
 
+Other FCC challenges completed under the [beta version](https://beta.freecodecamp.com/en/map). 
+* [Responsive Web Design Principles](https://github.com/chrisjim316/freeCodeCamp-/tree/master/Other).
+
 ## Projects
 * [Personal-Portfolio](https://codepen.io/liljimbos/full/RgxryK)
 ![PP](https://github.com/chrisjim316/freeCodeCamp-/blob/master/Assets/Images/Personal-Portfolio/Intro.JPG?raw=true)
