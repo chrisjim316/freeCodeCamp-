@@ -11,7 +11,7 @@ This repository serves to keep a record of every project I created and every les
 * [04-Basic-FE-Projects](https://github.com/chrisjim316/freeCodeCamp-/tree/master/04-Basic-FE-Projects/Tribute-Page)
 * [05-JavaScript](https://github.com/chrisjim316/freeCodeCamp-/tree/master/05-JavaScript) 
 * [06-OOP-FP](https://github.com/chrisjim316/freeCodeCamp-/tree/master/06-OOP-FP)
-* 07-Basic-Algorithm-Scripting
+* [07-Basic-Algorithm-Scripting](https://github.com/chrisjim316/freeCodeCamp-/tree/master/07-Basic-Algorithm-Scripting)
 * 08-JSON-APIs-Ajax
 * 09-Intermediate-FE-Projects
 * 10-Intermediate-Algorithm-Scripting
