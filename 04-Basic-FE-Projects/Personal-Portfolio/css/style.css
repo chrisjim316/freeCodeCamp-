@@ -1,7 +1,7 @@
 body {
   margin-top: 50px;
   background-color: white;
-  color: white;
+  color:white;
   font-family: 'Athiti', sans-serif;
 }
 
@@ -151,7 +151,7 @@ footer {
   border-radius: 15px;
   border-color: #0099ff;
   position: absolute;
-  left: 20%; 
+  left: 15%; 
 }
 
 .worldTrotter {
@@ -191,7 +191,21 @@ hr {
 
 #bigNerdRanch {
   position: relative; 
-  width: 7%;
-  height: 7%;
+  width: 8%;
+  height: 8%;
 }
+
+
+/* 
+background scroll effects only work in desktop versions with larger   screen sizes, preventing background images from getting distorted in smaller tablets, phones, etc.  
+*/
+@media (min-width:1200px)   {
+  .pageOne, .pageTwo, .pageThree, .pageFour, .pageFive {
+    	background-repeat: no-repeat; 
+      background-attachment: fixed;
+      background-position: center; 
+   }
+}
+
+
 
