@@ -31,7 +31,7 @@ There are multiple choice questions after every video challenge for revision and
 * The DOM: What's the Document Object Model? 
 * The DOM: Style in the Header, Script in the Footer
 
-### JavaScript Lingo 
+### JavaScript Lingo: 
 * JavaScript Lingo: MDN and Documentation 
 * JavaScript Lingo: Value Types 
 * JavaScript Lingo: Variables & camelCase 
@@ -42,7 +42,7 @@ There are multiple choice questions after every video challenge for revision and
 * JavaScript Lingo: Loops 
 * JavaScript Lingo: Regular Expressions
 
-### Chrome Developer Tools 
+### Chrome Developer Tools: 
 * Chrome Dev Tools: Elements 
 
 [Full map](https://www.freecodecamp.org/map) of the FCC curriculum. 
