@@ -1,10 +1,10 @@
 <header> 
   <!-- import Lobster font from google fonts --> 
-  <link href='http://fonts.googleapis.com/css?family=Lobster&effect=font-effect-outline' rel='stylesheet'   type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lobster&effect=font-effect-outline' rel='stylesheet' type='text/css'>
   <!-- import Athiti font from google fonts -->  
   <link href="https://fonts.googleapis.com/css?family=Athiti" rel="stylesheet">
   <!-- importing font awesome icons --> 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </header>
 
 <!-- The scrollable area -->
@@ -14,14 +14,15 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".myNavbar">
-        <span class="icon-bar"></span>
+      <!-- collapsed navbar-->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <!--end collapse-->
       <a class="navbar-brand scroll" href="#home">Chris Jim</a>
      </div>
-     <div class="collapse navbar-collapse myNavbar">
+     <div class="collapse navbar-collapse" id="myNavbar">
        <ul class="nav navbar-nav navbar-right">
          <li class="active"><a href="#home" class="scroll"><span class="glyphicon glyphicon-home"></span> Home</a></li>
          <li><a href="#about" class="scroll"><span class="glyphicon glyphicon-user"></span> About </a></li> 
@@ -69,12 +70,12 @@
     <div class="row text-center" style="font-size:2.0em;">
       <div class="skill skillLabel"><strong> Familiar: </strong></div>  
         <div class="skill"> Swift </div>
-        <div class="skill"> JavaScript </div> 
+        <div class="skill"><a href="https://github.com/chrisjim316/JavaScriptPlayground-" target="_blank"> JavaScript </a></div> 
     </div> 
     <div class="row text-center" style="font-size:2.0em;">
       <div class="skill skillLabel"><strong> Beginner: </strong></div>  
         <div class="skill"> Python </div>
-        <div class="skill"> C++ </div>
+        <div class="skill"><a href="https://github.com/chrisjim316/Cplusplus_WorkSpace/tree/master" target="_blank"> C++ </a> </div>
     </div> 
     <h2 class="text-center" style="font-size:5.0em; padding-bottom:30px;"><strong> Frameworks / Libraries: </strong></h2>
     <div class="row text-center" style="font-size:2.0em;">
@@ -91,13 +92,14 @@
       <div class="skill"> Git </div> 
       <div class="skill"> XCode </div>
       <div class="skill"> BlueJ </div> 
+      <div class="skill"> Atom </div> 
     </div> 
   </section>
 
 <!-- Section 3 --> 
   <section class="pageThree" id="experience">
     <h1 class="text-center"> My Experience </h1> 
-      <div style="position:relative; left:30%; top:50px;"> 
+      <div style="position:relative; left:30%; top:5%;"> 
         <a class="btn btn-free-code-camp btn-lg" href="https://www.freecodecamp.com/chrisjim316" target="_blank" title="freeCodeCamp"><i class="fa fa-5x fa-free-code-camp"></i></a>
         <h2>Freelance Web Developer 2017-Present</h2>
         <a class="btn btn-github btn-lg" href="https://github.com/chrisjim316" target="_blank" title="GitHub"><i class="fa fa-5x fa-github"></i></a>
@@ -111,19 +113,25 @@
   <section class="pageFour" id="portfolio">
     <div id="particles-js">
       <h1 class="text-center"> Portfolio </h1>
-      <div>
+      <div class="row">
         <h2 class="text-center" style="position:relative; top:-10px;" id="projectLabel"> WORLDTROTTER </h2>
-        <div class="worldTrotter">
-          <ul style="width:550px;"> 
+        <div class="worldTrotter col-6">
+          <ul style="width:500px;"> 
             <li> 
-              This app contains multiple views(tabs). One view converts values between degrees Fahrenheit and degrees Celsius, one displays the world map, and the other displays web view.
+              This app contains multiple views(tabs).
+            </li>
+            <li>
+              One view converts values between degrees Fahrenheit and degrees Celsius, one displays the world map, and the other displays web view.
+            </li>
             </li>
             <li>
               All views are localized in three distinct languages (English, Chinese, Spanish).
             </li>
           </ul>
         </div>
-        <img src="https://github.com/chrisjim316/Personal-Portfolio-/blob/master/Images/TransWorldTrotter.png?raw=true" alt="WorldTrotter" id="worldTrotter">
+        <div class="col-6">
+          <img src="https://github.com/chrisjim316/Personal-Portfolio-/blob/master/Images/TransWorldTrotter.png?raw=true" alt="WorldTrotter" id="worldTrotter"> 
+        </div>
       </div>
     </div>
   </section> 
@@ -157,7 +165,7 @@
         <i class="fa fa-quora"></i>
       </a>
       <a href="https://www.freecodecamp.com/chrisjim316" target="_blank">
-    <i class="fa fa-free-code-camp"></i>
+        <i class="fa fa-free-code-camp"></i>
       </a></p>
   </footer>
 </body>
