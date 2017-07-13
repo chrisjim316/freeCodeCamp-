@@ -8,13 +8,13 @@
 function largestOfFour(arr) {
   var results = [];
   for(var r = 0; r < arr.length; r++){
-    var largestNum = arr[r][0]; 
-    for(var c = 1; c < arr[r].length; c++){
-      if(arr[r][c] > largestNum){
-        largestNum = arr[r][c];
-      }
-    }
-    results[r] = largestNum; 
+     var largestNum = arr[r][0]; 
+     for(var c = 1; c < arr[r].length; c++){
+        if(arr[r][c] > largestNum){
+           largestNum = arr[r][c];
+        }
+     }
+     results[r] = largestNum; 
   }
   // You can do this!
   return results;
