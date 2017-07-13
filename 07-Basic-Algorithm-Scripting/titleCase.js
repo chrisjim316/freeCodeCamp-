@@ -3,7 +3,7 @@
  * For the purpose of this exercise, you should also capitalize connecting words like "the" and "of".
  */
  
- function titleCase(str) {
+function titleCase(str) {
     var newTitle = str.split(' ');
     var updatedTitle = [];
     for (var st in newTitle) {
