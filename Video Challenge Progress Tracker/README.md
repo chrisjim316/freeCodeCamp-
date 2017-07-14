@@ -44,6 +44,7 @@ There are multiple choice questions after every video challenge for revision and
 
 ### Chrome Developer Tools: 
 * Chrome Dev Tools: Elements 
+* Chrome Dev Tools: Network
 
 [Full map](https://www.freecodecamp.org/map) of the FCC curriculum. 
 
