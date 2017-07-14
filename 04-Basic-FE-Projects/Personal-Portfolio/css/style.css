@@ -1,8 +1,9 @@
-body {
-  margin-top: 50px;
-  background-color: white;
-  color:white;
-  font-family: 'Athiti', sans-serif;
+html, body {
+    background-color: white;
+    color:white;
+    font-family: 'Athiti', sans-serif;
+    width: 100%;
+    overflow-x: hidden; 
 }
 
 .pageOne {
