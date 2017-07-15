@@ -47,6 +47,8 @@ There are multiple choice questions after every video challenge for revision and
 * Chrome Dev Tools: Network
   - shows which element or part of the page took the longest
   - shows load time for each feature on the page 
+* Chrome Dev Tools: Sources
+  - debugging purposes (etc: setting breakpoints)
 
 [Full map](https://www.freecodecamp.org/map) of the FCC curriculum. 
 
