@@ -24,7 +24,7 @@
      </div>
      <div class="collapse navbar-collapse" id="myNavbar">
        <ul class="nav navbar-nav navbar-right">
-         <li class="active"><a href="#home" class="scroll"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+         <li><a href="#home" class="scroll"><span class="glyphicon glyphicon-home"></span> Home</a></li>
          <li><a href="#about" class="scroll"><span class="glyphicon glyphicon-user"></span> About </a></li> 
          <li><a href="#experience" class="scroll"><span class="glyphicon glyphicon-road"></span> Experience</a></li>
          <li><a href="#portfolio" class="scroll"><span class="glyphicon glyphicon-briefcase"></span> Portfolio</a></li>
@@ -59,7 +59,7 @@
     <div class="text-center">
       <h1 style="color:black; top:20px;"><strong> Technical Skills </strong></h1>  
     </div> 
-    <h2 class="text-center" style="font-size:5.0em; padding-bottom:30px;"><strong> Languages: </strong></h2> 
+    <h2 class="text-center" id="pageTwoLabel"><strong> Languages: </strong></h2> 
     <div class="row text-center" style="font-size:2.0em;">
       <div class="skill skillLabel"><strong> Proficient: </strong></div>  
         <div class="skill" style="color:white;"><a href="https://github.com/chrisjim316/JavaWorkspace" target="_blank"> Java </a>
@@ -77,17 +77,17 @@
         <div class="skill"> Python </div>
         <div class="skill"><a href="https://github.com/chrisjim316/Cplusplus_WorkSpace/tree/master" target="_blank"> C++ </a> </div>
     </div> 
-    <h2 class="text-center" style="font-size:5.0em; padding-bottom:30px;"><strong> Frameworks / Libraries: </strong></h2>
+    <h2 class="text-center" id="pageTwoLabel"><strong> Frameworks / Libraries: </strong></h2>
     <div class="row text-center" style="font-size:2.0em;">
       <div class="skill"> jQuery </div> 
       <div class="skill"> Bootstrap </div>
     </div> 
-    <h2 class="text-center" style="font-size:5.0em; padding-bottom:30px;"><strong> Platforms: </strong></h2>
+    <h2 class="text-center" id="pageTwoLabel"><strong> Platforms: </strong></h2>
     <div class="row text-center" style="font-size:2.0em;">
       <div class="skill"> iOS </div> 
       <div class="skill"> Web </div>
     </div> 
-    <h2 class="text-center" style="font-size:5.0em; padding-bottom:30px;"><strong> Tools: </strong></h2>
+    <h2 class="text-center" id="pageTwoLabel"><strong> Tools: </strong></h2>
     <div class="row text-center" style="font-size:2.0em;">
       <div class="skill"> Git </div> 
       <div class="skill"> XCode </div>
@@ -97,9 +97,9 @@
   </section>
 
 <!-- Section 3 --> 
-  <section class="pageThree" id="experience">
-    <h1 class="text-center"> My Experience </h1> 
-      <div style="position:relative; left:30%; top:5%;"> 
+  <section class="pageThree" id="experience"> 
+    <h1 class="text-center" style="color:black;"> My Experience </h1> 
+      <div style="position:relative; top:5%; left:10%;"> 
         <a class="btn btn-free-code-camp btn-lg" href="https://www.freecodecamp.com/chrisjim316" target="_blank" title="freeCodeCamp"><i class="fa fa-5x fa-free-code-camp"></i></a>
         <h2>Freelance Web Developer 2017-Present</h2>
         <a class="btn btn-github btn-lg" href="https://github.com/chrisjim316" target="_blank" title="GitHub"><i class="fa fa-5x fa-github"></i></a>
@@ -109,33 +109,83 @@
       </div>
   </section>
   
-<!-- Section 4 -->   
+<!-- Section 4 Project Showcase -->   
   <section class="pageFour" id="portfolio">
-    <div id="particles-js">
-      <h1 class="text-center"> Portfolio </h1>
-      <div class="row">
-        <h2 class="text-center" style="position:relative; top:-10px;" id="projectLabel"> WORLDTROTTER </h2>
-        <div class="worldTrotter col-6">
-          <ul style="width:500px;"> 
-            <li> 
-              This app contains multiple views(tabs).
-            </li>
-            <li>
-              One view converts values between degrees Fahrenheit and degrees Celsius, one displays the world map, and the other displays web view.
-            </li>
-            </li>
-            <li>
-              All views are localized in three distinct languages (English, Chinese, Spanish).
-            </li>
-          </ul>
-        </div>
-        <div class="col-6">
-          <img src="https://github.com/chrisjim316/Personal-Portfolio-/blob/master/Images/TransWorldTrotter.png?raw=true" alt="WorldTrotter" id="worldTrotter"> 
+    <h1 class="text-center"> Portfolio </h1>
+    <h3 class="text-center"> Click on each project's title for more info* </h3>
+    <div class="container">
+
+      <!-- first row -->
+       <div class="row">
+        <div class="col-md-6">
+          <div class="well">
+            <a class="thumbnail" href="https://github.com/chrisjim316/WorldTrotter-" target="_blank">
+               <img src="https://github.com/chrisjim316/Personal-Portfolio-/blob/master/Images/TransWorldTrotter.png?raw=true" alt="worldTrotter" class="project-img" style:"width:50%;height:50%;"></a>
+            <h2 id="projectTitle" data-toggle="collapse" data-target="#worldTrotter"><strong>WORLDTROTTER</strong></h2>
+            <div id="worldTrotter" class="collapse projectDescription">
+              <ul>
+                <li> This app contains multiple views(tabs). </li>
+                <li> One view converts values between degrees Fahrenheit and degrees Celsius, one displays the world map, and the other displays web view. </li>
+                <li> All views are localized in three distinct languages (English, Chinese, Spanish).</li>
+              </ul>
+              <p><strong>Technologies used:</strong> Swift, XCode</p>
+            </div>
+          </div>
+        </div>   
+        <div class="col-md-6">
+          <div class="well">
+            <a class="thumbnail" href="https://github.com/chrisjim316/ThirteensCardGame" target="_blank">
+              <img src="https://user-images.githubusercontent.com/26378494/28245907-7cec9b8c-6a43-11e7-9b90-babb87221a83.gif" alt="cardGame-demo" class="project-img"> 
+              <img src="https://user-images.githubusercontent.com/26378494/28245913-80f66320-6a43-11e7-871d-882421d52e7c.gif" alt="cardGame-win" class="project-img">
+              <img src="https://user-images.githubusercontent.com/26378494/28245909-7f28beee-6a43-11e7-8596-313a64bc82d2.JPG" alt="cardGame-lose" class="project-img">
+            </a>
+            <h2 id="projectTitle" data-toggle="collapse" data-target="#cardGame"><strong>SOLITAIRE CARD GAME</strong></h2>
+            <!-- collapsible projectDescription -->
+            <div id="cardGame" class="collapse projectDescription">
+              <ul>
+                <li> This modified game "Thirteens" is inspired by the game "Tetris Solitaire" created by Randy Rasa. </li>
+                <li> Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q correspond to the point values of 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12. </li>
+                <li> Pairs of cards whose point values add up to 13 are selected and removed. </li>
+                <li> Kings are selected and removed singly. </li>
+                <li> Only two cards can be picked and removed at once. </li>
+                <li> If no remaining moves are available, you lose. </li>
+              </ul>
+              <p><strong>Technologies used:</strong> Java, BlueJ, JFrame, ActionListener</p>
+            </div>
+          </div>
         </div>
       </div>
+     <!-- end of 1st row -->   
+     <!-- second row --> 
+      <div class="row">
+        <div class="col-md-6">
+          <div class="well">
+            <a href="https://user-images.githubusercontent.com/26378494/28362708-03cd7e14-6cb0-11e7-90dd-1fd9b26f64f8.png" class="thumbnail" target="_blank">
+              <img src="https://rafase282.github.io/images/quote.png" alt="Random Quote Generator" class="project-img"></a>
+            <h2 id="projectTitle" data-toggle="collapse" data-target="#random"><strong>RANDOM QUOTE GENERATOR</strong></button></h2>
+            <!-- collapsible projectDescription -->
+            <div id="random" class="collapse projectDescription">
+              <p class="text-center"> Under Construction </p> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="well">
+            <a href="https://user-images.githubusercontent.com/26378494/28362708-03cd7e14-6cb0-11e7-90dd-1fd9b26f64f8.png" class="thumbnail" target="_blank">
+              <img src="https://rafase282.github.io/images/weather.png" alt="Local Weather App" class="project-img"></a>
+            <h2 id="projectTitle" data-toggle="collapse" data-target="#weather"><strong>LOCAL WEATHER APP</strong></h2>
+            <!-- collapsible projectDescription -->
+            <div id="weather" class="collapse projectDescription">
+              <p class="text-center"> Under Construction </p> 
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- end of 2nd row -->  
     </div>
-  </section> 
-  
+  </section>
+
+
 <!-- Section 5 -->  
   <section class="pageFive" id="contact">
     <h1 class="text-center"> Say Hello to Me </h1>
@@ -165,7 +215,7 @@
         <i class="fa fa-quora"></i>
       </a>
       <a href="https://www.freecodecamp.com/chrisjim316" target="_blank">
-        <i class="fa fa-free-code-camp"></i>
+    <i class="fa fa-free-code-camp"></i>
       </a></p>
   </footer>
 </body>
