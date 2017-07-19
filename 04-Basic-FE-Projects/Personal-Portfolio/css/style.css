@@ -3,34 +3,45 @@ html, body {
     color:white;
     font-family: 'Athiti', sans-serif;
     width: 100%;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden; 
 }
 
+/* Intro page */
 .pageOne {
   background:url("http://picknotebook.com/blog/wp-content/uploads/2015/11/best-laptop-for-programming.jpg");
   background-size: cover;
   height: 1000px;
 }
 
+/* Skills page */
 .pageTwo {
   background:url("https://github.com/chrisjim316/Personal-Portfolio-/blob/master/Images/About.jpg?raw=true");
   background-size: cover;
-  height: 1500px; 
   padding-top:10px;
 }
 
+#pageTwoLabel {
+  font-size:5.0em; 
+  padding-bottom:30px;
+}
+
+/* Experience page */
 .pageThree {
-  background:url("https://user-images.githubusercontent.com/26378494/27760489-27e29304-5e7b-11e7-9046-764748e56fab.jpg");
+  background:url("https://user-images.githubusercontent.com/26378494/28327004-d6d6ce24-6c14-11e7-9051-3e682504ee70.jpg");
   background-size: cover;
-  height: 1000px;
+  height: 1200px;
   padding-top: 5px;
 }
 
+/* Portfolio page */
 .pageFour {
-  height: 1500px;
   margin-top: -20px;
+  background: black;
 }
 
+/* Contact me page */
 .pageFive {
   background:url("http://unsplash.com/photos/ZItuB3bb8aE/download?force=true");
   background-size: cover;
@@ -138,27 +149,21 @@ footer {
   text-align: center;
 }
 
-#particles-js {
-  width: 100%;
-  height: 1600px;
-  background: #111111;
+/* project's images style elements */ 
+.project-img {
+  height: 500px;
+  width: 450px;
 }
 
-#worldTrotter {
-  width: 330px;
-  height: 400px;
-  border-style: solid;
-  border-width: 5px;
-  border-radius: 15px;
-  border-color: #0099ff;
-  position: absolute;
-  left: 15%; 
+#projectTitle {
+  text-align: center; 
+  font-size: 2.8em;
+  cursor: pointer;
 }
 
-.worldTrotter {
-  position: absolute; 
-  font-size: 1.8em;
-  left: 50%;
+.projectDescription {
+  color: black; 
+  font-size: 1.5em;
 }
 
 .skill {
@@ -171,7 +176,7 @@ footer {
   display: inline-block;
 }
 
-.skillLabel, #projectLabel {
+.skillLabel {
   color: white;
 }
 
@@ -192,20 +197,78 @@ hr {
 
 #bigNerdRanch {
   position: relative; 
-  width: 8%;
-  height: 8%;
+  width:20%;
+  height: auto;
 }
+
+.well {
+  min-height: 300px;
+}
+
+
+
 
 
 /* 
 background scroll effects only work in desktop versions with larger   screen sizes, preventing background images from getting distorted in smaller tablets, phones, etc.  
 */
-@media (min-width:1200px)   {
+@media (min-width:1400px)   {
   .pageOne, .pageTwo, .pageThree, .pageFour, .pageFive {
     	background-repeat: no-repeat; 
       background-attachment: fixed;
       background-position: center; 
    }
+  #bigNerdRanch {
+      width:10%;
+      height: auto;
+  }
+}
+
+/*mobile screens */
+@media (max-width: 800px) and (min-width: 300px) {
+  img {
+    width: 30vw; 
+    height: 30vh;
+  }
+  h1 {
+    font-size: 15vw;
+  }
+  h2 {
+    font-size: 5vw;
+  }
+  h3 {
+    font-size: 6vw;
+  }
+  p {
+    font-size: 6vw;
+  }
+  .skill {
+    font-size: 5vw;
+  }
+  .transBlock {
+    width: 65%;
+  }
+  ul {
+    font-size: 4.5vw;
+    width: 80%;
+  }
+  #bigNerdRanch {
+    width: 30%;
+    height: 10%;
+  }
+  #pageTwoLabel {
+    font-size: 13vw;
+  }
+  .pageOne {
+    background-size: 100% 100%;
+    background:url("https://github.com/chrisjim316/Personal-Portfolio-/blob/master/Images/Intro-mobileSize.jpg?raw=true");
+  }
+  .pageTwo {
+    height: 1700px;
+  }
+  .pageThree {
+    height: 900px; 
+  }
 }
 
 
