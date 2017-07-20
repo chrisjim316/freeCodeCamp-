@@ -3,7 +3,10 @@
   $(document).ready(function() {
     // Only change code below this line.
     $("#getMessage").on("click",function(){
-      $(".message").html("Here is the message");
+      // alternative way - $(".message").html("Here is the message");
+      $.getJSON("/json/cats.json", function(json) {
+        $(".message").html(JSON.stringify(json));
+      });
     });
     // Only change code above this line.
   });
