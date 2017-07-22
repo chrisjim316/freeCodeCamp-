@@ -49,6 +49,9 @@ There are multiple choice questions after every video challenge for revision and
   - shows load time for each feature on the page 
 * Chrome Dev Tools: Sources
   - debugging purposes (ex: setting breakpoints)
+* Chrome Dev Tools: Timeline
+  - this panel lets you record and analyze all the activity in your application as it runs
+  - it sets the recorded data up in small, detailed logs
 
 [Full map](https://www.freecodecamp.org/map) of the FCC curriculum. 
 
