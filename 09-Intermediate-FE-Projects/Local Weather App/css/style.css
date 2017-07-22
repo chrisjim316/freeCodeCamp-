@@ -1,0 +1,40 @@
+body, html {
+  background: black; 
+  color: white; 
+  font-family: 'ABeeZee', sans-serif;
+  text-align: center; 
+  padding-top: 20px;
+}
+
+h1 {
+  font-size: 6em; 
+}
+
+/* fahrenheit and celsius buttons customization*/
+input {
+  width: 100px;
+  height: auto;
+}
+
+.textBetweenImg {
+  display: inline;
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative;
+  bottom: 40px;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+
+
+
+
