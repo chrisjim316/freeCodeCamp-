@@ -28,7 +28,7 @@ Other FCC challenges completed under the [beta version](https://beta.freecodecam
 * [Tribute Page](https://codepen.io/liljimbos/pen/eReeMM) 
 ![AlanTuringTP](https://github.com/chrisjim316/freeCodeCamp-/blob/master/Assets/Images/TributePage/Intro.JPG?raw=true) 
 * [Local Weather App](https://codepen.io/liljimbos/pen/dzbJqR)
-![localWeatherThumbNail](https://user-images.githubusercontent.com/26378494/28490569-e9f6a21a-6f0f-11e7-8d1c-0cd7f978bea4.JPG)
+![localWeatherThumbNail](https://github.com/chrisjim316/freeCodeCamp-/blob/master/09-Intermediate-FE-Projects/Local%20Weather%20App/Images/thumbnail.JPG?raw=true)
 
 
 ### LICENSE 
