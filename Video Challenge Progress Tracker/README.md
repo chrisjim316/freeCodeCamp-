@@ -52,6 +52,9 @@ There are multiple choice questions after every video challenge for revision and
 * Chrome Dev Tools: Timeline
   - this panel lets you record and analyze all the activity in your application as it runs
   - it sets the recorded data up in small, detailed logs
+* Chrome Dev Tools: Profiles
+  - this panel lets you profile the execution time and memory usage of a web app or page
+  - primarily applies to JavaScript 
 
 [Full map](https://www.freecodecamp.org/map) of the FCC curriculum. 
 
