@@ -36,6 +36,39 @@ function getWeather(urlString) {
       $("#temp").append(temp + " " + String.fromCharCode(176));
       $("#tempunit").append("C");
       $("#description").append(result.weather[0].main + " ");
+      var weatherCondition = result.weather[0].main;
+      IconGen(weatherCondition);
     }
   });
+}
+
+function IconGen(condition) {
+  var condition = condition.toLowerCase()
+  switch (condition) {
+    case 'drizzle':
+      addIcon(condition)
+      break;
+    case 'clouds':
+      addIcon(condition)
+      break;
+    case 'rain':
+      addIcon(condition)
+      break;
+    case 'snow':
+      addIcon(condition)
+      break;
+    case 'clear':
+      addIcon(condition)
+      break;
+    case 'thunderstorm':
+      addIcon(condition)
+      break;
+    default:
+      $('div.clouds').removeClass('hide');
+  }
+}
+
+function addIcon(condition) {
+  //find the right icon by searching for a specific class name 
+  $("div." + condition).removeClass('hide');
 }
