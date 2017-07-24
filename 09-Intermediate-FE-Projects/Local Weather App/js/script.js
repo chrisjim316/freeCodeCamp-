@@ -22,7 +22,7 @@ $(document).ready(function() {
    function getLocation() {
       $.ajax({
         url: "https://ipinfo.io/", dataType: "json", success: function(result) {
-          $("#location").text("You are in " + result.city + ", " + result.region + "."); 
+          $("#location").append("You are in " + result.city + ", " + result.country + "."); 
         }  
       });
    }
@@ -33,8 +33,9 @@ function getWeather(urlString) {
   $.ajax({
     url: urlString,  dataType: "json", success: function (result) {
       temp = Math.round(result.main.temp * 10) / 10;
-      $("#temp").text(temp + " " + String.fromCharCode(176));
-      $("#tempunit").text("C");
+      $("#temp").append(temp + " " + String.fromCharCode(176));
+      $("#tempunit").append("C");
+      $("#description").append(result.weather[0].main + " ");
     }
   });
 }
