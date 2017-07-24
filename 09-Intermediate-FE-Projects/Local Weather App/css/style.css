@@ -1,13 +1,19 @@
 body, html {
-  background: black; 
+  background: url("https://github.com/chrisjim316/freeCodeCamp-/blob/master/09-Intermediate-FE-Projects/Local%20Weather%20App/Images/background.jpg?raw=true");
   color: white; 
   font-family: 'ABeeZee', sans-serif;
   text-align: center; 
   padding-top: 20px;
+  background-size: cover; 
+  height: 1000px;
 }
 
 h1 {
   font-size: 6em; 
+}
+
+h2 {
+  font-size: 1.8em;
 }
 
 /* fahrenheit and celsius buttons customization*/
@@ -15,6 +21,8 @@ input {
   width: 100px;
   height: auto;
 }
+
+
 
 .textBetweenImg {
   display: inline;
@@ -29,6 +37,7 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
+  top: 950px;
   padding: 1rem;
   text-align: center;
 }
