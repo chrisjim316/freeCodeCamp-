@@ -2,7 +2,6 @@ var api = "https://fcc-weather-api.glitch.me/api/current?";
 var temp;
 
 $(document).ready(function() {
-
   $("#getWeather").on("click", function() {
     /* make Check Weather button disappear when clicked */
     document.getElementById("getWeather").style.display = "none";
@@ -13,14 +12,23 @@ $(document).ready(function() {
         var long = "lon=" + position.coords.longitude;
         var urlString = api + lat + '&' + long;
         getWeather(urlString);
+        getLocation();
       });
     } else {
       console.log("Geolocation is not supported by this browser.");
     }
   }); //end getWeather function
   
-});  
+   function getLocation() {
+      $.ajax({
+        url: "https://ipinfo.io/", dataType: "json", success: function(result) {
+          $("#location").text("You are in " + result.city + ", " + result.region + "."); 
+        }  
+      });
+   }
   
+});
+
 function getWeather(urlString) {
   $.ajax({
     url: urlString,  dataType: "json", success: function (result) {
