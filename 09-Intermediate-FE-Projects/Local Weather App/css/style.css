@@ -326,3 +326,24 @@ div.hide {
     opacity: 0.2;
   }
 }
+
+/*mobile screens */
+@media (max-width: 800px) and (min-width: 300px) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.1em;
+  }
+  input {
+    width: 80px;
+    height: auto;
+  }
+}
+
+
+
+
