@@ -15,7 +15,8 @@ $(document).ready(function() {
         getLocation();
       });
     } else {
-      console.log("Geolocation is not supported by this browser.");
+      $("#error").append("Unable to retrieve location. Change or update browser version");
+      console.log("Geolocation is not supported for this browser.")
     }
   }); //end getWeather function
   
@@ -34,7 +35,7 @@ function getWeather(urlString) {
     url: urlString,  dataType: "json", success: function (result) {
       temp = Math.round(result.main.temp * 10) / 10;
       $("#temp").append(temp + " " + String.fromCharCode(176));
-      $("#tempunit").append("C");
+      $("#tempUnit").append("C");
       $("#description").append(result.weather[0].main + " ");
       var weatherCondition = result.weather[0].main;
       IconGen(weatherCondition);
