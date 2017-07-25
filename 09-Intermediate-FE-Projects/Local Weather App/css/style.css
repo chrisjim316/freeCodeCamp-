@@ -5,7 +5,26 @@ body {
   text-align: center; 
   padding-top: 20px;
   background-size: cover; 
-  height: 900px;
+  height: 1400px;
+}
+
+.locationContainer {
+  padding: 5px 5px 5px 5px;
+  height: 100px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  resize: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-border: 1px solid white;
+  -webkit-border: 1px solid white;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  box-shadow: 0px 5px 12px 1px rgba(0, 0, 0, 0.6), 0 4px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 6px 3px rgba(0, 0, 0, 0.5), 0 -0.5px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 9px 12px 1px rgba(0, 0, 0, 0.4), 0 10px 3px rgba(0, 0, 0, 0.1), inset 0px 0px 6px 3px rgba(0, 0, 0, 0.1), 0 -0.5px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 9px 12px 1px rgba(0, 0, 0, 0.4), 0 10px 3px rgba(0, 0, 0, 0.1), inset 0px 0px 6px 3px rgba(0, 0, 0, 0.1), 0 -0.5px 3px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -13,7 +32,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 4em;
 }
 
 h3 {
@@ -39,7 +58,7 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  top: 950px;
+  top: 1300px;
   padding: 1rem;
   text-align: center;
   color: black;
@@ -327,13 +346,33 @@ div.hide {
   }
 }
 
+/* cloud animations */
+.cloud-intro{
+  position: relative;
+  height: 100%;
+  background: url(https://static.radulescu.me/examples/clouds/clouds1000.png);
+  background: url(https://static.radulescu.me/examples/clouds/clouds1000.png) 0 200px,
+              url(https://static.radulescu.me/examples/clouds/clouds1200_1.png) 0 300px,
+              url(https://static.radulescu.me/examples/clouds/clouds1000_blur3.png) 100px 250px;
+	animation: wind 20s linear infinite;
+}
+/* control the speed of the clouds here */
+@keyframes wind{
+  0% {
+    background-position: 0 100px, 0 200px, 50px 150px;
+  }
+  100% {
+    background-position: 1000px 100px, 1600px 200px, 900px 150px;
+  }
+}
+
 /*mobile screens */
 @media (max-width: 800px) and (min-width: 300px) {
   h1 {
     font-size: 3em;
   }
   h2 {
-    font-size: 1.5em;
+    font-size: 2.5em;
   }
   h3 {
     font-size: 1.1em;
@@ -347,6 +386,9 @@ div.hide {
   }
   footer {
     top: 1020px;
+  }
+  .locationContainer {
+    height: 80px;
   }
 }
 
