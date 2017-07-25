@@ -1,5 +1,4 @@
 var api = "https://fcc-weather-api.glitch.me/api/current?";
-var temp;
 
 $(document).ready(function() {
   $("#getWeather").on("click", function() {
@@ -13,6 +12,7 @@ $(document).ready(function() {
         var urlString = api + lat + '&' + long;
         getWeather(urlString);
         getLocation();
+        $("div.locationContainer").removeClass("hide");
       });
     } else {
       $("#error").append("Unable to retrieve location. Change or update browser version");
@@ -22,8 +22,8 @@ $(document).ready(function() {
   
    function getLocation() {
       $.ajax({
-        url: "https://ipinfo.io/", dataType: "json", success: function(result) {
-          $("#location").append("You are in " + result.city + ", " + result.country + "."); 
+        url: "https://ipinfo.io/", dataType: "json", success: function (result) {
+          $("#location").append(result.city + " " + result.country); 
         }  
       });
    }
@@ -33,9 +33,9 @@ $(document).ready(function() {
 function getWeather(urlString) {
   $.ajax({
     url: urlString,  dataType: "json", success: function (result) {
-      temp = Math.round(result.main.temp * 10) / 10;
-      $("#temp").append(temp + " " + String.fromCharCode(176));
-      $("#tempUnit").append("C");
+      var temp = result.main.temp.toFixed(1);
+      $("#temp").append(temp);
+      $("#tempUnit").append(String.fromCharCode(176) + "C");
       $("#description").append(result.weather[0].main + " ");
       var weatherCondition = result.weather[0].main;
       getIcon(weatherCondition);
@@ -48,25 +48,30 @@ function getIcon(condition) {
   var condition = condition.toLowerCase()
   switch (condition) {
     case "drizzle":
-      setIcon(condition)
+      setIcon(condition);
       break;
     case "clouds":
-      setIcon(condition)
+      setIcon(condition);
       break;
     case "rain":
-      setIcon(condition)
+      setIcon(condition);
+      $("div.cloud-intro").removeClass("cloud-intro");
       break;
     case "snow":
-      setIcon(condition)
+      setIcon(condition);
+      $("div.cloud-intro").removeClass("cloud-intro");
       break;
     case "clear":
-      setIcon(condition)
+      setIcon(condition);
+      $("div.cloud-intro").removeClass("cloud-intro");
       break;
     case "thunderstorm":
-      setIcon(condition)
+      setIcon(condition);
+      $("div.cloud-intro").removeClass("cloud-intro");
       break;
     default:
-      $("div.clouds").removeClass("hide");
+      setIcon(clouds);
+      break;
   }
 }
 
@@ -86,6 +91,7 @@ function getBackground(condition) {
     case "clouds":
       $("body").css("background-image", "url(https://github.com/chrisjim316/freeCodeCamp-/blob/master/09-Intermediate-FE-Projects/Local%20Weather%20App/Images/backgroundChanging/clouds.jpg?raw=true)");
       $("body").css("color", "black");
+      /* $("div.addCloud").addClass("cloud-intro"); */
       break;
       
     case "drizzle":
@@ -107,9 +113,25 @@ function getBackground(condition) {
   }
 }
 
+/* if toFahrenheit button is clicked, temp is converted into celsius */
+$("#toFahrenheit").on("click", function () {
+  var tempUnit = $("#tempUnit").text();
+  if(tempUnit === (String.fromCharCode(176) + "C")) {
+    var temp = $("#temp").text();
+    temp = (temp * 9 / 5 + 32).toFixed(1);
+    $("#temp").text(temp);
+    $("#tempUnit").text(String.fromCharCode(176) + "F");
+  }  
+});
 
-
-
-  
- 
+/* if toCelsius button is clicked, temp is converted into fahrenheit */
+$("#toCelsius").on("click", function () {
+  var tempUnit = $("#tempUnit").text();
+  if(tempUnit === (String.fromCharCode(176) + "F")) {
+    var temp = $("#temp").text();
+    temp = (((temp - 32) * 5) / 9 ).toFixed(1);
+    $("#temp").text(temp);
+    $("#tempUnit").text(String.fromCharCode(176) + "C");
+  }
+});
 
