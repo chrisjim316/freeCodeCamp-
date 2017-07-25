@@ -38,38 +38,78 @@ function getWeather(urlString) {
       $("#tempUnit").append("C");
       $("#description").append(result.weather[0].main + " ");
       var weatherCondition = result.weather[0].main;
-      IconGen(weatherCondition);
+      getIcon(weatherCondition);
+      getBackground(weatherCondition);
     }
   });
 }
 
-function IconGen(condition) {
+function getIcon(condition) {
   var condition = condition.toLowerCase()
   switch (condition) {
-    case 'drizzle':
-      addIcon(condition)
+    case "drizzle":
+      setIcon(condition)
       break;
-    case 'clouds':
-      addIcon(condition)
+    case "clouds":
+      setIcon(condition)
       break;
-    case 'rain':
-      addIcon(condition)
+    case "rain":
+      setIcon(condition)
       break;
-    case 'snow':
-      addIcon(condition)
+    case "snow":
+      setIcon(condition)
       break;
-    case 'clear':
-      addIcon(condition)
+    case "clear":
+      setIcon(condition)
       break;
-    case 'thunderstorm':
-      addIcon(condition)
+    case "thunderstorm":
+      setIcon(condition)
       break;
     default:
-      $('div.clouds').removeClass('hide');
+      $("div.clouds").removeClass("hide");
   }
 }
 
-function addIcon(condition) {
+function setIcon(condition) {
   //find the right icon by searching for a specific class name 
-  $("div." + condition).removeClass('hide');
+  $("div." + condition).removeClass("hide");
 }
+
+function getBackground(condition) {
+  var condition = condition.toLowerCase();
+  switch (condition) {
+      
+    case "clear": 
+      $("body").css("background-image", "url(https://github.com/chrisjim316/freeCodeCamp-/blob/master/09-Intermediate-FE-Projects/Local%20Weather%20App/Images/backgroundChanging/clear.jpg?raw=true)");
+      break;
+      
+    case "clouds":
+      $("body").css("background-image", "url(https://github.com/chrisjim316/freeCodeCamp-/blob/master/09-Intermediate-FE-Projects/Local%20Weather%20App/Images/backgroundChanging/clouds.jpg?raw=true)");
+      $("body").css("color", "black");
+      break;
+      
+    case "drizzle":
+      $("body").css("background-image", "url(https://github.com/chrisjim316/freeCodeCamp-/blob/master/09-Intermediate-FE-Projects/Local%20Weather%20App/Images/backgroundChanging/drizzle.jpg?raw=true)");
+      break;
+      
+    case "rain":
+      $("body").css("background-image", "url(https://github.com/chrisjim316/freeCodeCamp-/blob/master/09-Intermediate-FE-Projects/Local%20Weather%20App/Images/backgroundChanging/rain.jpg?raw=true)");;
+      break;
+      
+    case "snow":
+      $("body").css("background-image", "url(https://github.com/chrisjim316/freeCodeCamp-/blob/master/09-Intermediate-FE-Projects/Local%20Weather%20App/Images/backgroundChanging/snow.jpg?raw=true)");
+      $("body").css("color", "black");
+      break;
+      
+    case "thunderstorm":
+      $("body").css("background-image", "url(https://github.com/chrisjim316/freeCodeCamp-/blob/master/09-Intermediate-FE-Projects/Local%20Weather%20App/Images/backgroundChanging/thunderstorm.jpg?raw=true)");
+      break;
+  }
+}
+
+
+
+
+  
+ 
+
