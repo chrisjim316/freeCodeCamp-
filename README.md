@@ -23,12 +23,16 @@ Other FCC challenges completed under the [beta version](https://beta.freecodecam
 * [Responsive Web Design Principles](https://github.com/chrisjim316/freeCodeCamp-/tree/master/Other).
 
 ## Projects
-* [Personal-Portfolio](https://codepen.io/liljimbos/full/RgxryK)
+### **Personal Portfolio**
 ![PP](https://github.com/chrisjim316/freeCodeCamp-/blob/master/Assets/Images/Personal-Portfolio/Intro.JPG?raw=true)
-* [Tribute Page](https://codepen.io/liljimbos/pen/eReeMM) 
-![AlanTuringTP](https://github.com/chrisjim316/freeCodeCamp-/blob/master/Assets/Images/TributePage/Intro.JPG?raw=true) 
-* [Local Weather App](https://codepen.io/liljimbos/pen/dzbJqR)
-![localWeatherThumbNail](https://github.com/chrisjim316/freeCodeCamp-/blob/master/09-Intermediate-FE-Projects/Local%20Weather%20App/Images/thumbnail.JPG?raw=true)
+[LIVE DEMO](https://iam-chrisjim.github.io/)  -        [SOURCE CODE](https://codepen.io/liljimbos/pen/RgxryK/)
+### **Local Weather App**
+![thumbnail](https://github.com/chrisjim316/Local-Weather-App-/blob/master/Images/NEWthumbnail.JPG?raw=true)
+[LIVE DEMO](https://codepen.io/liljimbos/full/dzbJqR/)    -     [SOURCE CODE](https://codepen.io/liljimbos/pen/dzbJqR)
+### **Tribute Page**
+![AlanTuringTP](https://github.com/chrisjim316/freeCodeCamp-/blob/master/Assets/Images/TributePage/Intro.JPG?raw=true)
+[LIVE DEMO](https://codepen.io/liljimbos/full/eReeMM/)    -     [SOURCE CODE](https://codepen.io/liljimbos/pen/eReeMM) 
+
 
 
 ### LICENSE 
