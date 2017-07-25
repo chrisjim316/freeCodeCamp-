@@ -1,11 +1,11 @@
-body, html {
+body {
   background: url("https://github.com/chrisjim316/freeCodeCamp-/blob/master/09-Intermediate-FE-Projects/Local%20Weather%20App/Images/background.jpg?raw=true");
   color: white; 
   font-family: 'ABeeZee', sans-serif;
   text-align: center; 
   padding-top: 20px;
   background-size: cover; 
-  height: 1000px;
+  height: 900px;
 }
 
 h1 {
@@ -341,6 +341,12 @@ div.hide {
   input {
     width: 80px;
     height: auto;
+  }
+  body {
+    height: 1100px;
+  }
+  footer {
+    top: 1020px;
   }
 }
 
