@@ -27,15 +27,47 @@ var quotes = [
   {quote: "But the Dark Dimension, it's a place beyond time. Beyond death.", character: "Kaecilius"}
 ];
 
+$(document).ready(function() {
+  $("#genQuote").on("click", function() { 
+    $("div.quoteContainer").removeClass("hide");
+    generateQuote();
+  });
+});
+
 function generateQuote() {
   randomQuote = quotes[parseInt(Math.random() * quotes.length)];
   $("#quote").text(randomQuote.quote);
   $("#character").text(randomQuote.character);
+  getBackground(randomQuote.character); 
 }
 
-$(document).ready(function() {
-  $("#genQuote").on("click", function() { 
-    generateQuote();
-    $("div.quoteContainer").removeClass("hide");
-  });
-});
+function getBackground(character) {
+  switch (character) {
+      
+    case "The Ancient One": 
+      $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28656463-b7ec080a-72d4-11e7-8c16-319f5ea4879d.png)");
+      break;
+      
+    case "Baron Mordo":
+      $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28656464-b80256be-72d4-11e7-831a-2e98b9df8d9d.jpg)");
+      $("body").css("color", "black");
+      break;
+      
+    case "Dr. Stephen Strange":
+      $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28656460-b7c1eafc-72d4-11e7-9f84-4615ae5651e9.jpg)");
+      break;
+      
+    case "Wong":
+      $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28656459-b7c1b3ac-72d4-11e7-86a2-3fc4ff92fe93.jpg)");
+      break;
+      
+    case "Christine Palmer":
+      $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28656462-b7eb39fc-72d4-11e7-92ab-6065929b70a9.jpg)");
+      $("body").css("color", "black");
+      break;
+      
+    case "Kaecilius":
+      $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28656465-b802f556-72d4-11e7-9ca2-78f6a8ad58d2.jpg)");
+      break;
+  }
+}
