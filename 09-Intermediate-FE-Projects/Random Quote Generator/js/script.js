@@ -88,3 +88,44 @@ var spellAnimation = bodymovin.loadAnimation({
   autoplay: false,
   path: 'https://raw.githubusercontent.com/abrahamrkj/facebook-spell/master/data.json'
 })
+
+/* mobile screens media query in JavaScript */
+var mqls = [ // list of window.matchMedia() queries
+    window.matchMedia("(min-width: 300px)"),
+    window.matchMedia("(max-width: 800px)"),
+];
+
+if (mqls[0].matches && mqls[1].matches) {
+  
+  // window width is at least 300px & window wiith is at most 800px; 
+  function getBackground(character) {
+    switch (character) {
+      
+      case "The Ancient One": 
+        $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28657721-db3d7afe-72da-11e7-995d-d4df240e49ad.jpg)");
+        break;
+      
+      case "Baron Mordo":
+        $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28658353-78994060-72dd-11e7-8554-dcfddb1c3057.jpg)");
+        $("body").css("color", "black");
+        break;
+      
+      case "Dr. Stephen Strange":
+        $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28657717-db19836a-72da-11e7-9150-cb4ee848fef9.jpg)");
+        break;
+      
+      case "Wong":
+        $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28658356-7b3cb6a8-72dd-11e7-8baa-2a2930eee531.png)");
+        break;
+      
+      case "Christine Palmer":
+        $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28657718-db301170-72da-11e7-9a93-65d5a6994244.jpg)");
+        $("body").css("color", "black");
+        break;
+      
+    case "Kaecilius":
+        $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28657720-db3982e6-72da-11e7-9706-1a81e97c1477.jpg)");
+        break;
+    }
+  }
+} 
