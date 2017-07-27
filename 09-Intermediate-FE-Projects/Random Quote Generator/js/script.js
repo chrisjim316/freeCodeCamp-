@@ -1,3 +1,6 @@
+var tweetURL = "";
+var facebookURL = "";
+
 var quotes = [
   {quote: "Death is what gives life meaning. To know your days are numbered. Your time is short.", character: "The Ancient One"},
   {quote: "We never lose our demons, Mordo. We only learn to live above them.", character: "The Ancient One"},
@@ -29,20 +32,45 @@ var quotes = [
 ];
 
 $(document).ready(function() {
+  $("#tweet").hide();
+  $("#facebook").hide();
   $("#genQuote").on("click", function() { 
     $("div.quoteContainer").removeClass("hide");
     generateQuote();
     $("body").css("height", "500px");
+    $("#tweet").show();
+    $("#facebook").show();
+  });
+  
+  $("#tweet").on("click", function () {
+    tweetQuote();
+  });
+  
+  $("#facebook").on("click", function() {
+    shareQuote();
   });
 });
 
 function generateQuote() {
   randomQuote = quotes[parseInt(Math.random() * quotes.length)];
-  $("#quote").text(randomQuote.quote);
-  $("#character").text(randomQuote.character);
-  getBackground(randomQuote.character); 
+  var quote = randomQuote.quote;
+  var character = randomQuote.character;
+  $("#quote").text(quote);
+  $("#character").text(character);
+  getBackground(character); 
   spellAnimation.stop();
   spellAnimation.play(); 
+  /* (% url encoding) %20 => space line %23 = hashtag */ 
+  tweetURL = "https://twitter.com/intent/tweet?text=" + quote + "%0A-" + character + "%20%23quoteOfTheDay%20%23drstrange";
+  facebookURL = "https://www.facebook.com/sharer/sharer.php?u="+escape("https://codepen.io/liljimbos/pen/JydZJX")+"&t="+document.title;
+}
+
+function tweetQuote() {
+  $("#tweet").attr("href", tweetURL);
+}
+
+function shareQuote() {
+  $("#facebook").attr("href", facebookURL);
 }
 
 function getBackground(character) {
@@ -66,7 +94,7 @@ function getBackground(character) {
     case "Wong":
       $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28656459-b7c1b3ac-72d4-11e7-86a2-3fc4ff92fe93.jpg)");
       $("h1").css("color", "white");
-      $("footer").css("top", "350px");
+      $("footer").css("top", "400px");
       break;
       
     case "Christine Palmer":
@@ -104,29 +132,29 @@ if (mqls[0].matches && mqls[1].matches) {
     switch (character) {
       
       case "The Ancient One": 
-        $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28657721-db3d7afe-72da-11e7-995d-d4df240e49ad.jpg)");
+        $("body").css("background-image", "url(https://github.com/iam-chrisjim/Images/blob/master/RandomQuote/AncientOne-mobile.jpg?raw=true)");
         break;
       
       case "Baron Mordo":
-        $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28658353-78994060-72dd-11e7-8554-dcfddb1c3057.jpg)");
+        $("body").css("background-image", "url(https://github.com/iam-chrisjim/Images/blob/master/RandomQuote/Mordo-mobile.jpg?raw=true)");
         $("body").css("color", "black");
         break;
       
       case "Dr. Stephen Strange":
-        $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28657717-db19836a-72da-11e7-9150-cb4ee848fef9.jpg)");
+        $("body").css("background-image", "url(https://github.com/iam-chrisjim/Images/blob/master/RandomQuote/Strange-mobile.jpg?raw=true)");
         break;
       
       case "Wong":
-        $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28658356-7b3cb6a8-72dd-11e7-8baa-2a2930eee531.png)");
+        $("body").css("background-image", "url(https://github.com/iam-chrisjim/Images/blob/master/RandomQuote/Wong-mobile.jpg?raw=true)");
         break;
       
       case "Christine Palmer":
-        $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28657718-db301170-72da-11e7-9a93-65d5a6994244.jpg)");
+        $("body").css("background-image", "url(https://github.com/iam-chrisjim/Images/blob/master/RandomQuote/Christine-mobile.jpg?raw=true)");
         $("body").css("color", "black");
         break;
       
       case "Kaecilius":
-        $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28657720-db3982e6-72da-11e7-9706-1a81e97c1477.jpg)");
+        $("body").css("background-image", "url(https://github.com/iam-chrisjim/Images/blob/master/RandomQuote/kaecilius-mobile.jpg?raw=true)");
         break;
     }
   }
