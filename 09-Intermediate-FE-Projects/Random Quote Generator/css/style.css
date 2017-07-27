@@ -1,0 +1,26 @@
+body {
+  background:url("https://user-images.githubusercontent.com/30268174/28569404-36692f38-716c-11e7-8465-c189dbb965c2.jpg");
+  text-align: center; 
+}
+
+h1 {
+  font-size: 4em;
+}
+
+.quoteContainer {
+  background: white;
+  opacity: .7;
+  border-width: 5px;
+  border-radius: 15px;
+  width: 500px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  top: 30px;
+  position: relative;
+}
+
+.hide {
+  display: none;
+}
