@@ -42,3 +42,19 @@ h1 {
   position: absolute;
   bottom: 50px;
 }
+
+/*mobile screens */
+@media (max-width: 800px) and (min-width: 300px) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 1.1em;
+  }
+  .quoteContainer {
+    width: 60%;
+  }
+}
