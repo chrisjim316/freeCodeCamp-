@@ -2,7 +2,7 @@ var quotes = [
   {quote: "Death is what gives life meaning. To know your days are numbered. Your time is short.", character: "The Ancient One"},
   {quote: "We never lose our demons, Mordo. We only learn to live above them.", character: "The Ancient One"},
   {quote: "Your work saved the lives of thousands. What if I told you that reality is one of many?", character: "The Ancient One"},
-  {quote: "You're a man looking at the world through a keyhole. You've spent your whole life trying to widen that keyhole. And now, on hearing that it can be widened, in ways you can't imagine, you reject the possibility.", character: "The Ancient One"},
+  {quote: "I spent so many years peering through time... looking at this exact moment. But I can't see past it.", character: "The Ancient One"},
   {quote: "Through the mystic arts, we harness energy and shape reality.", character: "The Ancient One"},
   {quote: "I never saw your future, only its possibilities.", character: "The Ancient One"},
   {quote: "The true purpose of a sorcerer is to twist things out of their proper shape. Stealing power. Perverting nature. Like you.", character: "Baron Mordo"},
@@ -15,6 +15,7 @@ var quotes = [
   {quote: "Since you gave Kaecilius power from your dimension, I brought some power from mine. This is time. Endless, looped time!", character: "Dr. Stephen Strange"},
   {quote: "No. But I can lose. Again. And again. And again. Forever. That makes you my prisoner.", character: "Dr. Stephen Strange"},
   {quote: "While heroes like the Avengers protect the world from physical dangers, we sorcerers safeguard it against more mystical threats.", character: "Wong"},
+  {quote: "*Laughs", character: "Wong"},
   {quote: "Word of the Ancient One's death will spread through the Multiverse. Earth has no Sorcerer Supreme to defend it. We must be ready.", character: "Wong"},
   {quote: "Stephen. Everything is about you.", character: "Christine Palmer"},
   {quote: "This isn't the end, there are other things that can give your life meaning.", character: "Christine Palmer"},
@@ -23,7 +24,7 @@ var quotes = [
   {quote: "People think in terms of good and evil, but really, time is the true enemy of us all. Time kills everything.", character: "Kaecilius"},
   {quote: "I am death, and pain!", character: "Kaecilius"},
   {quote: "You'll die protecting this world!", character: "Kaecilius"},
-  {quote: "This world doesn't have to die, Mister Doctor. This world can take its place alongside many which is part of the one, the great and beautiful one. And we can all live forever", character: "Kaecilius"},
+  {quote: "This world doesn't have to die, Mister Doctor. We can all live forever", character: "Kaecilius"},
   {quote: "But the Dark Dimension, it's a place beyond time. Beyond death.", character: "Kaecilius"}
 ];
 
@@ -65,6 +66,7 @@ function getBackground(character) {
     case "Wong":
       $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28656459-b7c1b3ac-72d4-11e7-86a2-3fc4ff92fe93.jpg)");
       $("h1").css("color", "white");
+      $("footer").css("top", "350px");
       break;
       
     case "Christine Palmer":
@@ -96,7 +98,7 @@ var mqls = [ // list of window.matchMedia() queries
 ];
 
 if (mqls[0].matches && mqls[1].matches) {
-  
+  $("div.footerIcons").remove();
   // window width is at least 300px & window wiith is at most 800px; 
   function getBackground(character) {
     switch (character) {
@@ -123,7 +125,7 @@ if (mqls[0].matches && mqls[1].matches) {
         $("body").css("color", "black");
         break;
       
-    case "Kaecilius":
+      case "Kaecilius":
         $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28657720-db3982e6-72da-11e7-9706-1a81e97c1477.jpg)");
         break;
     }
