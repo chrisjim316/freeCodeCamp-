@@ -1,8 +1,8 @@
 var quotes = [
   {quote: "Death is what gives life meaning. To know your days are numbered. Your time is short.", character: "The Ancient One"},
   {quote: "We never lose our demons, Mordo. We only learn to live above them.", character: "The Ancient One"},
-  {quote: "You're a man looking at the world through a keyhole. You've spent your life trying to widen it. Your work saved the lives of thousands. What if I told you that reality is one of many?", character: "The Ancient One"},
-  {quote: "You're a man looking at the world through a keyhole. You've spent your whole life trying to widen that keyhole... to see more, to know more. And now, on hearing that it can be widened, in ways you can't imagine, you reject the possibility.", character: "The Ancient One"},
+  {quote: "Your work saved the lives of thousands. What if I told you that reality is one of many?", character: "The Ancient One"},
+  {quote: "You're a man looking at the world through a keyhole. You've spent your whole life trying to widen that keyhole. And now, on hearing that it can be widened, in ways you can't imagine, you reject the possibility.", character: "The Ancient One"},
   {quote: "Through the mystic arts, we harness energy and shape reality.", character: "The Ancient One"},
   {quote: "I never saw your future, only its possibilities.", character: "The Ancient One"},
   {quote: "The true purpose of a sorcerer is to twist things out of their proper shape. Stealing power. Perverting nature. Like you.", character: "Baron Mordo"},
@@ -31,6 +31,7 @@ $(document).ready(function() {
   $("#genQuote").on("click", function() { 
     $("div.quoteContainer").removeClass("hide");
     generateQuote();
+    $("body").css("height", "500px");
   });
 });
 
@@ -39,6 +40,8 @@ function generateQuote() {
   $("#quote").text(randomQuote.quote);
   $("#character").text(randomQuote.character);
   getBackground(randomQuote.character); 
+  spellAnimation.stop();
+  spellAnimation.play(); 
 }
 
 function getBackground(character) {
@@ -46,28 +49,42 @@ function getBackground(character) {
       
     case "The Ancient One": 
       $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28656463-b7ec080a-72d4-11e7-8c16-319f5ea4879d.png)");
+      $("h1").css("color", "white");
       break;
       
     case "Baron Mordo":
       $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28656464-b80256be-72d4-11e7-831a-2e98b9df8d9d.jpg)");
-      $("body").css("color", "black");
+      $("h1").css("color", "white");
       break;
       
     case "Dr. Stephen Strange":
       $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28656460-b7c1eafc-72d4-11e7-9f84-4615ae5651e9.jpg)");
+      $("h1").css("color", "white");
       break;
       
     case "Wong":
       $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28656459-b7c1b3ac-72d4-11e7-86a2-3fc4ff92fe93.jpg)");
+      $("h1").css("color", "white");
       break;
       
     case "Christine Palmer":
       $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28656462-b7eb39fc-72d4-11e7-92ab-6065929b70a9.jpg)");
-      $("body").css("color", "black");
+      $("h1").css("color", "white");
       break;
       
     case "Kaecilius":
       $("body").css("background-image", "url(https://user-images.githubusercontent.com/26378494/28656465-b802f556-72d4-11e7-9ca2-78f6a8ad58d2.jpg)");
+      $("h1").css("color", "black");
       break;
   }
 }
+
+/* spell customization */
+
+var spellAnimation = bodymovin.loadAnimation({
+  container: document.getElementById('potter-animation'),
+  renderer: 'svg',
+  loop: false,
+  autoplay: false,
+  path: 'https://raw.githubusercontent.com/abrahamrkj/facebook-spell/master/data.json'
+})
