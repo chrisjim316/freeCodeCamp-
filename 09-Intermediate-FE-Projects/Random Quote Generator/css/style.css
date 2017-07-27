@@ -12,6 +12,11 @@ h1 {
   position: relative;
 }
 
+p {
+  position: relative; 
+  top: 400px;
+}
+
 .quoteContainer {
   background: white;
   opacity: .7;
