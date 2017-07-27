@@ -1,33 +1,48 @@
 body {
-  background: url("https://user-images.githubusercontent.com/30268174/28569404-36692f38-716c-11e7-8465-c189dbb965c2.jpg");
+  background: url("https://github.com/chrisjim316/freeCodeCamp-/blob/master/Assets/Images/Random%20Quote%20Generator/defaultBackground.jpg?raw=true");
   background-size: cover;
   background-repeat: no-repeat; 
   height: 500px;
   text-align: center; 
 }
 
+/* title */
 h1 {
   font-size: 6em;
   top: 100px;
   position: relative;
+  color: white; 
 }
-
+/* cast a spell button */
+h2 {
+  font-size: 2.5em;
+}
+/* quote */
+h3 {
+  font-size: 2em;
+}
+/* character */
+h4 {
+  font-size: 1.6em;
+}
+/* credits */
 p {
   position: relative; 
-  top: 400px;
+  top: 300px;
+  color: white;
 }
 
 .quoteContainer {
   background: white;
   opacity: .7;
   border-width: 5px;
-  border-radius: 15px;
+  border-radius: 25px;
   width: 30%;
   padding-bottom: 10px;
   padding-top: 10px;
   margin-right: auto;
   margin-left: auto;
-  top: 200px;
+  top: 180px;
   position: relative;
 }
 
@@ -37,7 +52,7 @@ p {
 
 #genQuote {
   position: relative;
-  top: 180px;
+  top: 160px;
 }
 
 /* spell customization */
@@ -50,16 +65,30 @@ p {
 
 /*mobile screens */
 @media (max-width: 800px) and (min-width: 300px) {
+  /* title */
   h1 {
     font-size: 3em;
   }
+  /* cast a spell button */
   h2 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
+  /* quote */
   h3 {
     font-size: 1.1em;
   }
+  /* character */
+  h4 {
+    font-size: 0.9em;
+  }
+  /* credits */
+  p {
+    top: 200px;
+  }
   .quoteContainer {
     width: 60%;
+  }
+  body {
+    height: 580px;
   }
 }
