@@ -63,6 +63,17 @@ p {
   bottom: 50px;
 }
 
+footer {
+  position: absolute;
+  top: 500px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  color: black;
+}
+
 /*mobile screens */
 @media (max-width: 800px) and (min-width: 300px) {
   /* title */
@@ -83,12 +94,26 @@ p {
   }
   /* credits */
   p {
-    top: 200px;
+    top: 150px;
   }
   .quoteContainer {
-    width: 60%;
+    width: 70%;
   }
   body {
-    height: 580px;
+    height: 570px;
+    background-repeat: repeat-y;
   }
+  #genQuote {
+    top: 120px;
+  }
+  .quoteContainer {
+    top: 140px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+  footer {
+    top: 335px;
+    font-size: 0.7em;
+  }
+  
 }
