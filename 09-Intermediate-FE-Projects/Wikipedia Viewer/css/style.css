@@ -1,0 +1,14 @@
+body, html {
+  text-align: center; 
+  font-family: 'PT Serif', serif;
+  background: #004080;
+  color: white;
+}
+
+h1 {
+  font-size: 6.0em;
+}
+
+h2 {
+  font-size: 3.0em;
+}
