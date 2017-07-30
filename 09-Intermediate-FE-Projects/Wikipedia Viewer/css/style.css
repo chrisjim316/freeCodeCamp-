@@ -4,10 +4,11 @@ body, html {
   color: black;
 }
 
+/* title */
 h1 {
   font-size: 6.0em;
 }
-
+/* Surprise Me button text */
 h2 {
   font-size: 1.5em;
 }
@@ -23,6 +24,17 @@ h2 {
   margin: 2px 4px 23px;
   padding: 13px 16px;
   font-weight: 600;
+}
+
+footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 100%;
+  padding: 1rem;
+  text-align: center;
+  color: black;
 }
 
 /* search form element customization */
@@ -55,7 +67,7 @@ input[type=search] {
 	transition: all .5s;
 }
 input[type=search]:focus {
-	width: 130px;
+	width: 200px;
 	background-color: #fff;
 	border-color: #66CC75;
 	
@@ -68,4 +80,14 @@ input:-moz-placeholder {
 }
 input::-webkit-input-placeholder {
 	color: #999;
+}
+
+/*mobile screens */
+@media (max-width: 800px) and (min-width: 300px) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 0.8em;
+  }
 }
