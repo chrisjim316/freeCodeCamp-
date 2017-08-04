@@ -29,15 +29,16 @@ Other FCC challenges completed under the [beta version](https://beta.freecodecam
 ### **Local Weather App**
 ![thumbnail](https://github.com/chrisjim316/Local-Weather-App-/blob/master/Images/NEWthumbnail.JPG?raw=true)
 [LIVE DEMO](https://codepen.io/liljimbos/full/dzbJqR/)    -     [SOURCE CODE](https://codepen.io/liljimbos/pen/dzbJqR)
+### **Wikipedia Search**
+![thumbnail](https://raw.githubusercontent.com/chrisjim316/freeCodeCamp-/master/Assets/Images/Wikipedia%20Viewer/Images/thumbnail.JPG)
+[LIVE DEMO](https://codepen.io/liljimbos/pen/GvogyR)    -     [SOURCE CODE](https://codepen.io/liljimbos/full/GvogyR) 
 ### **Random Quote Generator**
 ![random quote generator](https://github.com/chrisjim316/freeCodeCamp-/blob/master/Assets/Images/Random%20Quote%20Generator/thumbnail.JPG?raw=true)
 [LIVE DEMO](https://codepen.io/liljimbos/full/JydZJX/)    -     [SOURCE CODE](https://codepen.io/liljimbos/pen/JydZJX)
 ### **Tribute Page**
 ![AlanTuringTP](https://github.com/chrisjim316/freeCodeCamp-/blob/master/Assets/Images/TributePage/Intro.JPG?raw=true)
 [LIVE DEMO](https://codepen.io/liljimbos/full/eReeMM/)    -     [SOURCE CODE](https://codepen.io/liljimbos/pen/eReeMM) 
-### **Wikipedia Search**
-![thumbnail](https://raw.githubusercontent.com/chrisjim316/freeCodeCamp-/master/Assets/Images/Wikipedia%20Viewer/Images/thumbnail.JPG)
-[LIVE DEMO](https://codepen.io/liljimbos/pen/GvogyR)    -     [SOURCE CODE](https://codepen.io/liljimbos/full/GvogyR) 
+
 
 
 
