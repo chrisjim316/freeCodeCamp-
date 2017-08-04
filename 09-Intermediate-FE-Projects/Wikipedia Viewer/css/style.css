@@ -15,7 +15,7 @@ h2 {
 
 #wikiLogo {
   height: auto;
-  width: 20%;
+  width: 25%;
   padding-bottom: 15px;
 }
 
@@ -23,7 +23,7 @@ h2 {
   background-color: #e6e6e6;
   padding: 15px;
   margin: 5px;
-  border-radius: 15px;
+  border-radius: 40px;
   position: relative;
   cursor: pointer; 
 }
@@ -58,7 +58,7 @@ input[type=search] {
 	background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
 	border: solid 1px #ccc;
 	padding: 9px 10px 9px 32px;
-	width: 150px;
+	width: 300px;
 	
 	-webkit-border-radius: 10em;
 	-moz-border-radius: 10em;
@@ -69,7 +69,7 @@ input[type=search] {
 	transition: all .5s;
 }
 input[type=search]:focus {
-	width: 220px;
+	width: 350px;
 	background-color: #fff;
 	border-color: #66CC75;
 	
@@ -91,5 +91,18 @@ input::-webkit-input-placeholder {
   }
   h2 {
     font-size: 0.8em;
+  }
+  input[type=search] {
+    width: 45%;
+  }
+  input[type=search]:focus {
+    width: 55%;
+  }
+  #surpriseMe,#searchButton {
+    font-size: 150%;
+  }
+  #wikiLogo {
+    height: auto;
+    width: 50%;
   }
 }
