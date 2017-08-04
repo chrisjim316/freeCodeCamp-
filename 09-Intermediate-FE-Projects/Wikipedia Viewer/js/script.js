@@ -1,45 +1,80 @@
-var search = document.getElementById("search");
-var response = "";
-var searchURL = "";
+//https://www.mediawiki.org/wiki/API:Search_and_discovery
+var wikiAPI = "//en.wikipedia.org/w/api.php";
+var search = $('#search');
+var response = $('#response');
 
-var randomWikiAPI="https://en.wikipedia.org/wiki/Special:Random";
 $(document).ready(function() {
-});
+  $("#searchButton").on("click", function () {
+    $("response").empty(); //make sure previous results are omitted. 
+    $.ajax({
+    url: wikiAPI,
+    data: { action: 'query', list: 'search', srsearch: search.val(), format: 'json' },
+    dataType: 'jsonp',
+    success: function (x) {
+      var html  = '';
+          html += '  <div class="row row-centered">';
+          
+      x.query.search.map(function(w) {
+        html += '    <div class="col-md-6">';
+        html += '      <a href="https://en.wikipedia.org/wiki/' + w.title + '" target="_blank">';
+        html += '        <div class="panel panel-default">';
+        html += '          <div class="panel-heading">';
+        html += '            <h3 class="panel-title">' + w.title + '</h3>';
+        html += '          </div>';
+        html += '          <div class="panel-body">';
+        html += '            ' + w.snippet;
+        html += '          </div>';
+        html += '        </div>';
+        html += '      </a>';
+        html += '    </div>';
+      });
+      
+      html += '  </div>';
+      
+      response.html(html);
+    }
+    });//end ajax function
+  }); //end searchButton 
+}); //end document.ready
 
-/* function provides an event listener for the search box, and detects the Enter key. On Enter key, do
-* an article query on Wikipedia using user's search criteria. */
-$("search").keydown(function (event) {
-  if (event.keyCode === 13) {                // test for Enter key pressed (ASCII 13).
-     search.value = "";                       // clear search box.
-     search();                                // run Wikipedia search.
-     return false;                            // return prevents premature Submit of input text box.
+/* search the wiki when enter key is pressed. */
+search.keypress(function (e) {
+  if (e.which == 13) {
+    $("#searchButton").click(); 
+    return false; //prevent refreshing the page every time enter key is pressed. 
   }
 });
 
-
-/* function search() makes the actual JSONP query to Wikipedia.*/
-function search() {
-  searchURL = "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=" + $("search").val() + "&callback=?";
-	// srsearch -> get all search results based on keyword search.
-  // by default 10 search results are returned.  
+/* alternatively if required to update search results constantly as user type new letters/words
+search.keyup(function() {
   $.ajax({
-    url: searchURL,
-    data: queryData,
-    dataType: "jsonp",
-    contentType: "application/json; charset=utf-8",
-    async: false,
-    type: "GET",
-    headers: {
-      'Api-User-Agent': 'Example/1.0'
-    },
-    success: function(data) {
-      // First we make sure no previous results are showing.
-      var results = data.query.pages;
-      //generate html for each search result 
-      for(var res in results) {
-        response = '<div class="well"><div id="title"><h1>' + res.title + '</h1></div>' + '<div id="body"><h2>' + res.extract + '</h2></div></div>';
-        $("#response-area").append(response);
-      }  
+    url: '//en.wikipedia.org/w/api.php',
+    data: { action: 'query', list: 'search', srsearch: search.val(), format: 'json' },
+    dataType: 'jsonp',
+    success: function (x) {
+      var html  = '';
+          html += '  <div class="row row-centered">';
+          
+      x.query.search.map(function(w) {
+        html += '    <div class="col-xs-6">';
+        html += '      <a href="https://en.wikipedia.org/wiki/' + w.title + '" target="_blank">';
+        html += '        <div class="panel panel-default">';
+        html += '          <div class="panel-heading">';
+        html += '            <h3 class="panel-title">' + w.title + '</h3>';
+        html += '          </div>';
+        html += '          <div class="panel-body">';
+        html += '            ' + w.snippet;
+        html += '          </div>';
+        html += '        </div>';
+        html += '      </a>';
+        html += '    </div>';
+      });
+      
+      html += '  </div>';
+      
+      response.html(html);
     }
   });
-}
+});
+*/
+  
