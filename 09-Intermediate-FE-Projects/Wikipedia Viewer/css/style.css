@@ -19,13 +19,13 @@ h2 {
   padding-bottom: 15px;
 }
 
-#surpriseMe {
+#surpriseMe,#searchButton {
   background-color: #e6e6e6;
   padding: 15px;
   margin: 5px;
   border-radius: 15px;
   position: relative;
-  display: inline-block;
+  cursor: pointer; 
 }
 
 footer {
@@ -69,7 +69,7 @@ input[type=search] {
 	transition: all .5s;
 }
 input[type=search]:focus {
-	width: 210px;
+	width: 220px;
 	background-color: #fff;
 	border-color: #66CC75;
 	
