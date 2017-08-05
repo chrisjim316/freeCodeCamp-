@@ -10,8 +10,13 @@ html, body {
 
 /* Intro page */
 .pageOne {
-  background:url("http://picknotebook.com/blog/wp-content/uploads/2015/11/best-laptop-for-programming.jpg");
+  background:url("https://user-images.githubusercontent.com/26378494/28993089-cad2f656-79df-11e7-814c-0e268245b511.jpg");
   background-size: cover;
+  height: 1000px;
+}
+
+#overlay {
+  background: rgba(0, 0, 0, 0.76);
   height: 1000px;
 }
 
@@ -19,34 +24,33 @@ html, body {
 .pageTwo {
   background:url("https://github.com/chrisjim316/Personal-Portfolio-/blob/master/Images/About.jpg?raw=true");
   background-size: cover;
-  padding-top:10px;
-}
-
-#pageTwoLabel {
-  font-size:5.0em; 
-  padding-bottom:30px;
+  min-height: 100%;
+  padding-bottom: 40px;
+  padding-top:40px;
 }
 
 /* Experience page */
 .pageThree {
   background:url("https://user-images.githubusercontent.com/26378494/28327004-d6d6ce24-6c14-11e7-9051-3e682504ee70.jpg");
   background-size: cover;
-  height: 1200px;
-  padding-top: 5px;
+  min-height: 100%;
+  padding-top: 20px;
+  padding-bottom: 60px;
 }
 
 /* Portfolio page */
 .pageFour {
+  padding-top: 5px;
   margin-top: -20px;
   background: black;
 }
 
 /* Contact me page */
 .pageFive {
-  background:url("http://unsplash.com/photos/ZItuB3bb8aE/download?force=true");
+  background:url("https://github.com/chrisjim316/Personal-Portfolio-/blob/master/Images/Contact.jpg?raw=true");
   background-size: cover;
   height: 350px;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .btnList {
@@ -83,7 +87,6 @@ html, body {
     border-style: solid;
 	  border-color: #084461;
 }
-
 .btn-github {
     background-color: #4d0066;
     border-radius: 10px;
@@ -113,7 +116,7 @@ html, body {
 
 h1 {
   padding-top: 10px;
-  font-size: 7.0em;
+  font-size: 10.0em;
 }
 
 h2 {
@@ -125,28 +128,19 @@ h3 {
   font-size: 2.5em;
 }
 
-.transBlock {
-  background-color: black;
-  opacity: .7;
+.title {
   padding-bottom: 10px;
-  width: 650px;
+  width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  border-radius: 15px;
   position: relative;
-  top: 140px;
+  top: 250px;
 }
 
-footer {
-  background-color: black;
-  color: gray;
-  line-height: 20px;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  width: 100%;
-  bottom: 0;
-  position: relative;
-  text-align: center;
+/*skill category title */
+#pageTwoLabel {
+  font-size:5.0em; 
+  padding-bottom:30px;
 }
 
 /* project's images style elements */ 
@@ -180,33 +174,259 @@ footer {
   color: white;
 }
 
+/* self intro background configuration */
 .self-intro {
-  text-align: center; 
+  background: silver;
+  min-height: 100%
+  width: 100%;
+  padding-top: 60px;
+}
+
+/* paragraph self-intro */
+#self-intro {
+  text-align: center;
+  width: 50%;
   font-size: 2.5em;
-  color: black;
-  opacity: .7;
-  width: 50%; 
+  display:block;
   margin: 0 auto;
-}
-
-hr {
-  width: 65%;
-  height: 5px;
-  background-color: black;
-}
-
-#bigNerdRanch {
-  position: relative; 
-  width:20%;
-  height: auto;
+  color: black;
+  padding-bottom: 60px;
 }
 
 .well {
   min-height: 300px;
 }
 
+/* CV and contact borders */
+.border {
+  border-style: solid;
+  border-width: 3px;
+  border-color: white; 
+}
 
+/* CV and contact buttons */
+.CV {
+  top: 280px;
+  position: relative;
+  font-size: 70%;
+  width: 140px;
+  display: inline-block;
+  margin-left: 20px;
+  cursor: pointer; 
+}
 
+.contact {
+  top: 280px;
+  position: relative;
+  font-size: 70%;
+  width: 140px;
+  display: inline-block;
+  cursor: pointer; 
+}
+
+/*control border of 'technical skills' */
+.pageTitles {
+  width: 790px;
+  border-color: black;
+  border-width: 5px;
+  display: block;
+  margin:0 auto;
+  margin-top: 50px;
+}
+
+/* control fontsize of 'technical skills'  */
+#pageTitle {
+  font-size: 6.5em;
+  padding-bottom: 5px;
+}
+
+#jobPosition {
+  font-size: 4em;
+}
+
+footer {
+  background-color: black;
+  color: gray;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  width: 100%;
+  bottom: 0;
+  position: relative;
+  text-align: center;
+}
+
+/* The Timeline - Experience Page */
+
+#timeline {
+  font-size: 2.6em;
+}
+
+.timeline {
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 2em 0;
+  list-style-type: none;
+}
+
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: ' ';
+  display: block;
+  width: 6px;
+  height: 100%;
+  margin-left: -3px;
+  background: rgb(80,80,80);
+  background: -moz-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
+  background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  z-index: 5;
+}
+
+.timeline li {
+  padding: 1em 0;
+}
+
+.timeline li:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* control left dot on timeline */
+.direction-l {
+  position: relative;
+  width: 417px;
+  float: left;
+  text-align: right;
+}
+/* control right dot on timeline */
+.direction-r {
+  position: relative;
+  width: 417px;
+  float: right;
+}
+
+.flag-wrapper {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.flag {
+  position: relative;
+  display: inline;
+  background: rgb(248,248,248);
+  padding: 6px 10px;
+  border-radius: 5px; 
+  font-weight: 600;
+  text-align: left;
+}
+
+.direction-l .flag {
+  -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+}
+
+.direction-r .flag {
+  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+}
+
+.direction-l .flag:before,
+.direction-r .flag:before {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  content: ' ';
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-top: -10px;
+  background: #fff;
+  border-radius: 10px;
+  border: 4px solid rgb(255,80,80);
+  z-index: 10;
+}
+
+.direction-r .flag:before {
+  left: -40px;
+}
+
+.direction-l .flag:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border: solid transparent;
+  border-left-color: rgb(248,248,248);
+  border-width: 8px;
+  pointer-events: none;
+}
+
+.direction-r .flag:after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border: solid transparent;
+  border-right-color: rgb(248,248,248);
+  border-width: 8px;
+  pointer-events: none;
+}
+
+.time-wrapper {
+  display: inline;
+  line-height: 2em;
+  font-size: 0.8em;
+  color: rgb(250,80,80);
+  vertical-align: middle;
+  border-style: hidden;
+  border-width: 1px;
+}
+
+.direction-l .time-wrapper {
+  float: left;
+}
+
+.direction-r .time-wrapper {
+  float: right;
+}
+
+.time {
+  display: inline-block;
+  padding: 4px 6px;
+  background: rgb(248,248,248);
+}
+
+.desc {
+  margin: 1em 0.75em 0 0;
+  font-size: 0.9em;
+  font-style: italic;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.direction-r .desc {
+  margin: 1em 0 0 0.75em;
+}
 
 
 /* 
@@ -218,10 +438,6 @@ background scroll effects only work in desktop versions with larger   screen siz
       background-attachment: fixed;
       background-position: center; 
    }
-  #bigNerdRanch {
-      width:10%;
-      height: auto;
-  }
 }
 
 /*mobile screens */
@@ -231,10 +447,10 @@ background scroll effects only work in desktop versions with larger   screen siz
     height: 30vh;
   }
   h1 {
-    font-size: 15vw;
+    font-size: 14vw;
   }
   h2 {
-    font-size: 5vw;
+    font-size: 8vw;
   }
   h3 {
     font-size: 6vw;
@@ -245,31 +461,246 @@ background scroll effects only work in desktop versions with larger   screen siz
   .skill {
     font-size: 5vw;
   }
-  .transBlock {
-    width: 65%;
-  }
   ul {
     font-size: 4.5vw;
     width: 80%;
-  }
-  #bigNerdRanch {
-    width: 30%;
-    height: 10%;
   }
   #pageTwoLabel {
     font-size: 13vw;
   }
   .pageOne {
     background-size: 100% 100%;
-    background:url("https://github.com/chrisjim316/Personal-Portfolio-/blob/master/Images/Intro-mobileSize.jpg?raw=true");
+    background:url("https://user-images.githubusercontent.com/26378494/28993780-9166167a-79f1-11e7-9eee-006460b30d99.jpg");
+    height: 450px;
   }
-  .pageTwo {
-    height: 1700px;
+  .title {
+    padding-bottom: 10px;
+    width: 90%;
+    top: 100px;
   }
-  .pageThree {
-    height: 900px; 
+  .border {
+    width: 25%;
+    border-width: 2px;
+  }
+  /* CV and contact buttons */
+  .CV,.contact {
+    top: 110px;
+    position: relative;
+  }
+  /* self intro background configuration */
+  .self-intro { 
+    padding-top: 40px;
+  }
+  /* paragraph self-intro */
+  #self-intro {
+    width: 80%;
+    font-size: 5vw;
+    padding-bottom: 40px;
+  }
+  #borderText {
+    font-size: 5.5vw;
+  }
+  #jobPosition {
+    font-size:6.5vw;
+  }
+  .pageTitles {
+    width: 85%;
+  }
+  #pageTitle {
+    font-size: 12vw;
+  }
+  /*skill category title */
+  #pageTwoLabel {
+    font-size: 10vw;
+    padding-bottom: 10px;
+  }
+  #footer {
+    font-size: 3vw;
+  }
+  /*College/Job Position*/
+  #timeline {
+    font-size: 15vw;
   }
 }
 
+/*ipad screens*/
+@media (max-width: 1000px) and (min-width: 600px) {
+  img {
+    width: 30vw; 
+    height: 30vh;
+  }
+  h1 {
+    font-size: 8vw;
+  }
+  h2 {
+    font-size: 6vw;
+  }
+  h3 {
+    font-size: 4vw;
+  }
+  p {
+    font-size: 4vw;
+  }
+  .skill {
+    font-size: 3vw;
+  }
+  ul {
+    font-size: 1.5vw;
+    width: 80%;
+  }
+  #pageTwoLabel {
+    font-size: 10vw;
+  }
+  .pageOne {
+    background-size: 100% 100%;
+    background:url("https://user-images.githubusercontent.com/26378494/28993780-9166167a-79f1-11e7-9eee-006460b30d99.jpg");
+    height: 500px;
+  }
+  .title {
+    padding-bottom: 10px;
+    width: 90%;
+    top: 50px;
+  }
+  .border {
+    width: 25%;
+    border-width: 2px;
+  }
+  /* CV and contact buttons */
+  .CV,.contact {
+    top: 100px;
+    position: relative;
+  }
+  /* self intro background configuration */
+  .self-intro { 
+    padding-top: 40px;
+  }
+  /* paragraph self-intro */
+  #self-intro {
+    width: 80%;
+    font-size: 3vw;
+  }
+  #borderText {
+    font-size: 3.5vw;
+  }
+  #jobPosition {
+    font-size:4.5vw;
+  }
+  .pageTitles {
+    width: 85%;
+  }
+  #pageTitle {
+    font-size: 9vw;
+  }
+  /*skill category title */
+  #pageTwoLabel {
+    font-size: 6vw;
+    padding-bottom: 10px;
+  }
+  #footer {
+    font-size: 3vw;
+  }
+  /*College/Job Position*/
+  #timeline {
+    font-size: 10vw;
+  }
+  /*date/time span*/
+  .time-wrapper {
+    font-size: 1.5vw;
+  }
+  /*desc of College/Job Position*/
+  .desc {
+    font-size: 2vw;
+  }
+  .timeline {
+    width: 900px;
+  }
+}
 
+/* ================ Timeline Media Queries ================ */
+@media screen and (max-width: 660px) {
+  .timeline {
+ 	  width: 100%;
+	  padding: 4em 0 1em 0;
+  }
+  .timeline li {
+	  padding: 2em 0;
+  }
+  .direction-l,
+  .direction-r {
+	  float: none;
+	  width: 100%;
+	  text-align: center;
+  }
+  .flag-wrapper {
+	  text-align: center;
+  }
+  .flag {
+	  background: rgb(255,255,255);
+	  z-index: 15;
+  }
+  .direction-l .flag:before,
+  .direction-r .flag:before {
+    position: absolute;
+    top: -30px;
+	  left: 50%;
+	  content: ' ';
+	  display: block;
+	  width: 12px;
+	  height: 12px;
+	  margin-left: -9px;
+	  background: #fff;
+	  border-radius: 10px;
+	  border: 4px solid rgb(255,80,80);
+	  z-index: 10;
+  }
+  .direction-l .flag:after,
+  .direction-r .flag:after {
+	  content: "";
+	  position: absolute;
+	  left: 50%;
+	  top: -8px;
+	  height: 0;
+	  width: 0;
+	  margin-left: -8px;
+	  border: solid transparent;
+	  border-bottom-color: rgb(255,255,255);
+	  border-width: 8px;
+	  pointer-events: none;
+  }
+  .time-wrapper {
+	  display: block;
+	  position: relative;
+	  margin: 4px 0 0 0;
+	  z-index: 14;
+  }
+  .direction-l .time-wrapper {
+	  float: none;
+  }
+  .direction-r .time-wrapper {
+	  float: none;
+  }
+  .desc {
+	  position: relative;
+	  margin: 1em 0 0 0;
+	  padding: 1em;
+	  background: rgb(245,245,245);
+	  -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+	  -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+	  box-shadow: 0 0 1px rgba(0,0,0,0.20);
+    z-index: 15;
+  }
+  .direction-l .desc,
+  .direction-r .desc {
+	  position: relative;
+	  margin: 1em 1em 0 1em;
+	  padding: 1em;	
+    z-index: 15;
+  }
+}
 
+@media screen and (min-width: 400px ?? max-width: 660px) {
+  .direction-l .desc,
+  .direction-r .desc {
+	  margin: 1em 4em 0 4em;
+  }
+}
