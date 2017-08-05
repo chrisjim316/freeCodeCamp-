@@ -24,7 +24,7 @@ Other FCC challenges completed under the [beta version](https://beta.freecodecam
 
 ## Projects
 ### **Personal Portfolio**
-![PP](https://github.com/chrisjim316/freeCodeCamp-/blob/master/Assets/Images/Personal-Portfolio/Intro.JPG?raw=true)
+![PP](https://github.com/chrisjim316/Personal-Portfolio-/blob/master/Images/intro2.JPG?raw=true)
 [LIVE DEMO](https://iam-chrisjim.github.io/)  -        [SOURCE CODE](https://codepen.io/liljimbos/pen/RgxryK/)
 ### **Local Weather App**
 ![thumbnail](https://github.com/chrisjim316/Local-Weather-App-/blob/master/Images/NEWthumbnail.JPG?raw=true)
