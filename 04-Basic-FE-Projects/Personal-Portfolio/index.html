@@ -36,51 +36,53 @@
   
 <!-- Section 1 -->
   <section class="pageOne text-center" id="home">
-    <div class="transBlock text-center">
-      <h1> Chris Jim </h1>
-      <h3> iOS Developer | Front-End Web Developer</h3>
+    <div id="overlay">
+      <div class="title">
+        <h1><strong> CHRIS JIM </strong></h1>
+        <h3 id="jobPosition"><strong> IOS DEVELOPER | FRONT-END WEB DEVELOPER </strong></h3>
+      </div>
+      <div class="row text-center">
+        <div class="border contact"><a href="#contact" class="scroll"><h2 style="color: white;" id="borderText"><strong> Contact </strong></h2></a></div>
+        <div class="border CV"><h2 style="color: white;" id="borderText"><a href="https://drive.google.com/file/d/0ByZ5dmmIdSHeZHVLQ09VY2tfV3M/view" target="_blank"><strong> CV </strong></a></h2></div>
+      </div>
     </div>
-    <div class="btnList">
-      <a class="btn btn-email btn-lg" href="mailto:chrisjim316@gmail.com" title="Email"><i class="fa fa-2x fa-envelope"></i></a>
-      <a class="btn btn-linkedin btn-lg" href="https://www.linkedin.com/in/chris-jim-77b090128/" target="_blank" title="LinkedIn"><i class="fa fa-2x fa-linkedin"></i></a>
-      <a class="btn btn-github btn-lg" href="https://github.com/chrisjim316" target="_blank" title="GitHub"><i class="fa fa-2x fa-github"></i></a>
-      <a class="btn btn-quora btn-lg" href="https://www.quora.com/profile/Chris-Jim-1" target="_blank" title="Quora"><i class="fa fa-2x fa-quora"></i></a>
-      <a class="btn btn-free-code-camp btn-lg" href="https://www.freecodecamp.com/chrisjim316" target="_blank" title="freeCodeCamp"><i class="fa fa-2x fa-free-code-camp"></i></a>
-    </div> 
   </section>
   
+<!-- self-introduction --> 
+<div class="self-intro">
+  <p id="self-intro" style="padding-bottom:10px"><strong> I fell in love with programming when I was 17 and have been self-learning ever since.</strong></p>
+  <p id="self-intro"> Swarms of new technology have and will continue to revolutionize our fundamental way of living. I see myself spearheading projects that will take us a step further in effectively deciphering the mysteries of our complex planet. </p>
+</div>
+
 <!-- Section 2 --> 
   <section class="pageTwo" id="about">
-    <div class="self-intro">
-      <hr>
-      <p> I fell in love with programming when I was 17 and have been self-learning ever since.</p>
-      <hr>
-    </div>
-    <div class="text-center">
-      <h1 style="color:black; top:20px;"><strong> Technical Skills </strong></h1>  
+    <div class="text-center pageTitles border">
+      <h1 style="color:black; top:20px;" id="pageTitle"><strong> TECHNICAL SKILLS </strong></h1>  
     </div> 
     <h2 class="text-center" id="pageTwoLabel"><strong> Languages: </strong></h2> 
     <div class="row text-center" style="font-size:2.0em;">
       <div class="skill skillLabel"><strong> Proficient: </strong></div>  
         <div class="skill" style="color:white;"><a href="https://github.com/chrisjim316/JavaWorkspace" target="_blank"> Java </a>
         </div>
+        <div class="skill"><a href="https://github.com/chrisjim316/JavaScriptPlayground-" target="_blank"> JavaScript </a></div>
         <div class="skill"> HTML5 </div> 
         <div class="skill"> CSS </div> 
     </div> 
     <div class="row text-center" style="font-size:2.0em;">
       <div class="skill skillLabel"><strong> Familiar: </strong></div>  
-        <div class="skill"> Swift </div>
-        <div class="skill"><a href="https://github.com/chrisjim316/JavaScriptPlayground-" target="_blank"> JavaScript </a></div> 
+      <div class="skill"> Swift </div>   
     </div> 
     <div class="row text-center" style="font-size:2.0em;">
       <div class="skill skillLabel"><strong> Beginner: </strong></div>  
         <div class="skill"> Python </div>
         <div class="skill"><a href="https://github.com/chrisjim316/Cplusplus_WorkSpace/tree/master" target="_blank"> C++ </a> </div>
+        <div class="skill"> PHP </div>
     </div> 
     <h2 class="text-center" id="pageTwoLabel"><strong> Frameworks / Libraries: </strong></h2>
     <div class="row text-center" style="font-size:2.0em;">
       <div class="skill"> jQuery </div> 
       <div class="skill"> Bootstrap </div>
+      <div class="skill"> Ajax </div>
     </div> 
     <h2 class="text-center" id="pageTwoLabel"><strong> Platforms: </strong></h2>
     <div class="row text-center" style="font-size:2.0em;">
@@ -97,21 +99,38 @@
   </section>
 
 <!-- Section 3 --> 
-  <section class="pageThree" id="experience"> 
-    <h1 class="text-center" style="color:black;"> My Experience </h1> 
-      <div style="position:relative; top:5%; left:10%;"> 
-        <a class="btn btn-free-code-camp btn-lg" href="https://www.freecodecamp.com/chrisjim316" target="_blank" title="freeCodeCamp"><i class="fa fa-5x fa-free-code-camp"></i></a>
-        <h2>Freelance Web Developer 2017-Present</h2>
-        <a class="btn btn-github btn-lg" href="https://github.com/chrisjim316" target="_blank" title="GitHub"><i class="fa fa-5x fa-github"></i></a>
-        <h2>Open Source Developer 2017-Present</h2>
-        <img src="https://github.com/chrisjim316/Personal-Portfolio-/blob/master/Images/BigNerdRanchLogo.jpeg?raw=true" alt="BigNerdRanch" id="bigNerdRanch"></a>
-        <h2>iOS Developer 2017-Present</h2>
-      </div>
+  <section class="pageThree" id="experience" style="color:black;"> 
+    <h1 class="text-center border pageTitles" style="color:black;" id="pageTitle"> EXPERIENCE </h1> 
+      <div id="timeline"> 
+      <!-- The Timeline -->
+      <ul class="timeline">
+	    <!-- Item 1 -->
+	    <li>
+		    <div class="direction-r">
+			    <div class="flag-wrapper">
+				    <span class="flag">KING'S COLLEGE LONDON </span>
+				    <span class="time-wrapper"><span class="time">2017 - Present</span></span>
+			    </div>
+			    <div class="desc">Computer Science Major. First Year (expected grade – First)</div>
+		    </div>
+	    </li>
+	<!-- Item 2 -->
+	    <li>
+		    <div class="direction-l">
+			    <div class="flag-wrapper">
+				    <span class="flag">FREELANCE WEB DEVELOPER</span>
+				    <span class="time-wrapper"><span class="time">2017 - Present</span></span>
+			    </div>
+			    <div class="desc">Built multiple responsive web applications and earned the Front-End Development Certification</div>
+		    </div>
+	    </li>
+    </ul>
+    </div>
   </section>
   
 <!-- Section 4 Project Showcase -->   
   <section class="pageFour" id="portfolio">
-    <h1 class="text-center"> Portfolio </h1>
+    <h1 class="text-center border pageTitles" style="border-color: white;" id="pageTitle"> PORTFOLIO </h1>
     <h3 class="text-center"> Click on each project's title for more info* </h3>
     <div class="container">
 
@@ -124,11 +143,10 @@
             <h2 id="projectTitle" data-toggle="collapse" data-target="#worldTrotter"><strong>WORLDTROTTER</strong></h2>
             <div id="worldTrotter" class="collapse projectDescription">
               <ul>
-                <li> This app contains multiple views(tabs). </li>
-                <li> One view converts values between degrees Fahrenheit and degrees Celsius, one displays the world map, and the other displays web view. </li>
-                <li> All views are localized in three distinct languages (English, Chinese, Spanish).</li>
+                <li> Incorporated various types of world map, conversion between degrees Fahrenheit and degrees Celsius, and a web view. </li>
+                <li> Localized the app in three distinct languages (English, Chinese, Spanish).</li>
               </ul>
-              <p><strong>Technologies used:</strong> Swift, XCode</p>
+              <p><strong>Technologies used:</strong> Swift, XCode, UIKit</p>
             </div>
           </div>
         </div>   
@@ -143,7 +161,7 @@
             <!-- collapsible projectDescription -->
             <div id="cardGame" class="collapse projectDescription">
               <ul>
-                <li> This modified game "Thirteens" is inspired by the game "Tetris Solitaire" created by Randy Rasa. </li>
+                <li> Built this modified game "Thirteens" being inspired by the game "Tetris Solitaire" created by Randy Rasa. </li>
                 <li> Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q correspond to the point values of 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12. </li>
                 <li> Pairs of cards whose point values add up to 13 are selected and removed. </li>
                 <li> Kings are selected and removed singly. </li>
@@ -160,28 +178,68 @@
       <div class="row">
         <div class="col-md-6">
           <div class="well">
-            <a href="https://user-images.githubusercontent.com/26378494/28362708-03cd7e14-6cb0-11e7-90dd-1fd9b26f64f8.png" class="thumbnail" target="_blank">
-              <img src="https://rafase282.github.io/images/quote.png" alt="Random Quote Generator" class="project-img"></a>
+            <a href="https://codepen.io/liljimbos/full/JydZJX/" class="thumbnail" target="_blank">
+              <img src="https://github.com/iam-chrisjim/Images/blob/master/RandomQuote/thumbnail.JPG?raw=true" alt="Random Quote Generator" class="project-img"></a>
             <h2 id="projectTitle" data-toggle="collapse" data-target="#random"><strong>RANDOM QUOTE GENERATOR</strong></button></h2>
             <!-- collapsible projectDescription -->
             <div id="random" class="collapse projectDescription">
+              <ul>
+                <li> Utilized percent-encoding and jQuery to provide a tweet template with hashtags, quote, and author. </li>
+                <li> Incorporated Twitter and Facebook ‘share quote’ buttons.  </li>
+                <li> Added unique animations and custom backgrounds based on the author of the quote. </li>
+              </ul> 
+              <p><strong>Technologies used:</strong> HTML5, CSS, JavaScript, jQuery, Bootstrap</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="well">
+            <a href="https://codepen.io/liljimbos/full/dzbJqR/" class="thumbnail" target="_blank">
+              <img src="https://github.com/chrisjim316/Local-Weather-App-/blob/master/Images/NEWthumbnail.JPG?raw=true" alt="Local Weather App" class="project-img"></a>
+            <h2 id="projectTitle" data-toggle="collapse" data-target="#weather"><strong>LOCAL WEATHER APP</strong></h2>
+            <!-- collapsible projectDescription -->
+            <div id="weather" class="collapse projectDescription">
+              <ul>
+                <li> Implemented jQuery to acquire the user’s city, country, and details about the local weather, using the user’s geolocation API and IP address. </li>
+                <li> Used JavaScript to convert between degrees Celsius and Fahrenheit. </li>
+                <li> Changed background/animations based on weather conditions </li>
+              </ul>
+              <p><strong>Technologies used:</strong> HTML5, CSS, JavaScript, jQuery, Bootstrap, Geolocation/Weather API</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- end of 2nd row -->  
+    <!-- 3rd row -->
+     <div class="row">
+        <div class="col-md-6">
+          <div class="well">
+            <a href="https://user-images.githubusercontent.com/26378494/28362708-03cd7e14-6cb0-11e7-90dd-1fd9b26f64f8.png" class="thumbnail" target="_blank">
+              <img src="https://user-images.githubusercontent.com/30268174/28666035-58a64be8-72f8-11e7-995d-f38e10a342b1.png" alt="Twitchtv JSON API" class="project-img"></a>
+            <h2 id="projectTitle" data-toggle="collapse" data-target="#twitchtv"><strong>Twitchtv JSON API</strong></button></h2>
+            <!-- collapsible projectDescription -->
+            <div id="twitchtv" class="collapse projectDescription">
               <p class="text-center"> Under Construction </p> 
             </div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="well">
-            <a href="https://user-images.githubusercontent.com/26378494/28362708-03cd7e14-6cb0-11e7-90dd-1fd9b26f64f8.png" class="thumbnail" target="_blank">
-              <img src="https://rafase282.github.io/images/weather.png" alt="Local Weather App" class="project-img"></a>
-            <h2 id="projectTitle" data-toggle="collapse" data-target="#weather"><strong>LOCAL WEATHER APP</strong></h2>
+            <a href="https://codepen.io/liljimbos/full/GvogyR/" class="thumbnail" target="_blank">
+              <img src="https://raw.githubusercontent.com/chrisjim316/freeCodeCamp-/master/Assets/Images/Wikipedia%20Viewer/Images/thumbnail.JPG" alt="Wikipedia Searcher" class="project-img"></a>
+            <h2 id="projectTitle" data-toggle="collapse" data-target="#wiki"><strong>Wikipedia Search</strong></h2>
             <!-- collapsible projectDescription -->
-            <div id="weather" class="collapse projectDescription">
-              <p class="text-center"> Under Construction </p> 
+            <div id="wiki" class="collapse projectDescription">
+              <ul>
+                <li>Integrated with MediaWiki API to provide the user with Wikipedia’s huge content database.</li>
+                <li>Utilized Ajax to acquire and display the title and snippet of 10 most relevant search results.</li>
+              </ul>
+              <p><strong>Technologies used:</strong> HTML5, CSS, JavaScript, jQuery, Bootstrap, MediaWiki API</p>   
             </div>
           </div>
         </div>
       </div>
-    <!-- end of 2nd row -->  
+    <!-- end of 3rd row -->
     </div>
   </section>
 
@@ -200,24 +258,13 @@
   
 <!-- The footer -->
   <footer>
-    <p>Copyright © Chris Jim 2017. All Rights Reserved</p>
+    <p id="footer">Copyright © Chris Jim 2017. All Rights Reserved</p>
     <p>
-      <a href="mailto:chrisjim316@gmail.com">
-        <i class="fa fa-envelope"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/chris-jim-77b090128/" target="_blank">
-        <i class="fa fa-linkedin"></i>
-      </a>
-      <a href="https://github.com/chrisjim316" target="_blank">
-        <i class="fa fa-github"></i>
-      </a>
-      <a href="https://www.quora.com/profile/Chris-Jim-1" target="_blank">
-        <i class="fa fa-quora"></i>
-      </a>
-      <a href="https://www.freecodecamp.com/chrisjim316" target="_blank">
-    <i class="fa fa-free-code-camp"></i>
-      </a></p>
+      <a href="mailto:chrisjim316@gmail.com"><i class="fa fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/chris-jim-77b090128/" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/chrisjim316" target="_blank"><i class="fa fa-github"></i></a>
+      <a href="https://www.quora.com/profile/Chris-Jim-1" target="_blank"><i class="fa fa-quora"></i></a>
+      <a href="https://www.freecodecamp.com/chrisjim316" target="_blank"><i class="fa fa-free-code-camp"></i></a>
+    </p>
   </footer>
 </body>
-
-
