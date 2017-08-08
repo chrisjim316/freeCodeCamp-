@@ -1,11 +1,11 @@
-<header> 
+<head> 
   <!-- import Lobster font from google fonts --> 
   <link href='http://fonts.googleapis.com/css?family=Lobster&effect=font-effect-outline' rel='stylesheet' type='text/css'>
   <!-- import Athiti font from google fonts -->  
   <link href="https://fonts.googleapis.com/css?family=Athiti" rel="stylesheet">
   <!-- importing font awesome icons --> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-</header>
+</head>
 
 <!-- The scrollable area -->
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -43,7 +43,7 @@
       </div>
       <div class="row text-center">
         <div class="border contact"><a href="#contact" class="scroll"><h2 style="color: white;" id="borderText"><strong> Contact </strong></h2></a></div>
-        <div class="border CV"><h2 style="color: white;" id="borderText"><a href="https://drive.google.com/file/d/0ByZ5dmmIdSHeZHVLQ09VY2tfV3M/view" target="_blank"><strong> CV </strong></a></h2></div>
+        <div class="border CV"><h2 style="color: white;" id="borderText"><a href="https://drive.google.com/file/d/0ByZ5dmmIdSHeOE1NWlk1bGZOWWs/view" target="_blank"><strong> CV </strong></a></h2></div>
       </div>
     </div>
   </section>
@@ -100,32 +100,34 @@
 
 <!-- Section 3 --> 
   <section class="pageThree" id="experience" style="color:black;"> 
-    <h1 class="text-center border pageTitles" style="color:black;" id="pageTitle"> EXPERIENCE </h1> 
-      <div id="timeline"> 
-      <!-- The Timeline -->
+    <h1 class="text-center border pageTitles" style="color:black; margin-bottom: 3%;" id="pageTitle"> EXPERIENCE </h1> 
+    <div class="work-timeline">
       <ul class="timeline">
-	    <!-- Item 1 -->
-	    <li>
-		    <div class="direction-r">
-			    <div class="flag-wrapper">
-				    <span class="flag">KING'S COLLEGE LONDON </span>
-				    <span class="time-wrapper"><span class="time">2017 - Present</span></span>
-			    </div>
-			    <div class="desc">Computer Science Major. First Year (expected grade – First)</div>
-		    </div>
-	    </li>
-	<!-- Item 2 -->
-	    <li>
-		    <div class="direction-l">
-			    <div class="flag-wrapper">
-				    <span class="flag">FREELANCE WEB DEVELOPER</span>
-				    <span class="time-wrapper"><span class="time">2017 - Present</span></span>
-			    </div>
-			    <div class="desc">Built multiple responsive web applications and earned the Front-End Development Certification</div>
-		    </div>
-	    </li>
-    </ul>
-    </div>
+        <li class="timeline-event">
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <p class="timeline-event-thumbnail"> 2017 - Present </p>
+            <h5 id="workplace"><a href="https://www.freecodecamp.org/chrisjim316" target="_blank">FREECODECAMP</a></h5>
+            <h5 id="jobPos"> Freelance Web Developer </h5>
+            <p id="jobDesc">
+              Built multiple responsive web applications and earned the Front-End Development Certification (477 Hours Challenge)
+            </p>
+          </div>
+        </li>
+      </ul>
+      <ul class="timeline">
+        <li class="timeline-event">
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <p class="timeline-event-thumbnail">March 2016 - July 2017 </p>
+            <h5 id="workplace"><a href="http://www.tact.com.tw/" target="_blank">TAIWAN TACT EDUCATION CO.,LTD.</a></h5>
+            <h5 id="jobPos"> English Language/IELTS Tutor </h5>
+            <p id="jobDesc"> Taught English and IELTS to junior-high and senior-high school students </p>
+            <p id="jobDesc"> Successfully raised senior students' IELTS scores by an average of 1.0 - 1.5 band scale on an overall scale of 9.0 </p>
+          </div>
+        </li>
+      </ul>
+    </div>  
   </section>
   
 <!-- Section 4 Project Showcase -->   
