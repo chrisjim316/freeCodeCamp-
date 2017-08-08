@@ -56,7 +56,9 @@ There are multiple choice questions after every video challenge for revision and
   - this panel lets you profile the execution time and memory usage of a web app or page
   - primarily applies to JavaScript
 * Chrome Dev Tools: Resources
-  - this panel lets you inspect resources that are loaded in the inspected page.
+  - this panel lets you inspect resources that are loaded in the inspected page
+* Chrome Dev Tools: Audits
+  - This panel gives optimization suggestions to improve the webpage's performance 
 
 [Full map](https://www.freecodecamp.org/map) of the FCC curriculum. 
 
