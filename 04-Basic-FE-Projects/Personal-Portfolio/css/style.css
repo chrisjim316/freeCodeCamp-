@@ -200,8 +200,9 @@ h3 {
   font-size: 70%;
   width: 140px;
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 15px;
   cursor: pointer; 
+  padding-bottom: 8px;
 }
 
 .contact {
@@ -211,22 +212,23 @@ h3 {
   width: 140px;
   display: inline-block;
   cursor: pointer; 
+  padding-bottom: 8px;
 }
 
-/*control border of 'technical skills' */
+/*control border of pageTitles */
 .pageTitles {
   width: 790px;
   border-color: black;
   border-width: 5px;
   display: block;
   margin:0 auto;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
-/* control fontsize of 'technical skills'  */
+/* control fontsize of pageTitles  */
 #pageTitle {
   font-size: 6.5em;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
 }
 
 #jobPosition {
@@ -287,7 +289,7 @@ footer {
   -o-transition: all .3s;
 }
 .timeline-event:hover  #workplace{
-  color: #ed5565;
+  color: #4f83f2;
 }
 .timeline-event-copy {
   left: 50px;
@@ -410,6 +412,7 @@ background scroll effects only work in desktop versions with larger   screen siz
   .CV,.contact {
     top: 110px;
     position: relative;
+    padding-bottom: 10px;
   }
   /* self intro background configuration */
   .self-intro { 
@@ -425,12 +428,13 @@ background scroll effects only work in desktop versions with larger   screen siz
     font-size: 5.5vw;
   }
   #jobPosition {
-    font-size:6.5vw;
+    font-size: 6.5vw;
   }
   .pageTitles {
     width: 85%;
   }
   #pageTitle {
+    padding-bottom: 15px;
     font-size: 12vw;
   }
   /*skill category title */
