@@ -168,8 +168,6 @@ h3 {
 /* self intro background configuration */
 .self-intro {
   background: silver;
-  min-height: 100%;
-  width: 100%;
   padding-top: 60px;
 }
 
