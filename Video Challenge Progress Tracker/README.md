@@ -54,11 +54,15 @@ There are multiple choice questions after every video challenge for revision and
   - it sets the recorded data up in small, detailed logs
 * Chrome Dev Tools: Profiles
   - this panel lets you profile the execution time and memory usage of a web app or page
-  - primarily applies to JavaScript
+  - primarily applies to JavaScript 
 * Chrome Dev Tools: Resources
   - this panel lets you inspect resources that are loaded in the inspected page
 * Chrome Dev Tools: Audits
   - This panel gives optimization suggestions to improve the webpage's performance 
+* Chrome Dev Tools: Console
+  - This panel allows me to view raw or structured data by using standard JS statements and console-specific commands
+  - Additionally, I could view information(structured data) returned from an API
+
 
 [Full map](https://www.freecodecamp.org/map) of the FCC curriculum. 
 
