@@ -31,7 +31,7 @@ html, body {
 
 /* Experience page */
 .pageThree {
-  background:url("https://user-images.githubusercontent.com/26378494/28327004-d6d6ce24-6c14-11e7-9051-3e682504ee70.jpg");
+  background:url("https://github.com/chrisjim316/Personal-Portfolio-/blob/master/Images/marbleBG.jpg?raw=true");
   background-size: cover;
   min-height: 100%;
   padding-top: 20px;
@@ -353,7 +353,22 @@ footer {
   font-size: 20px;
   width: 50%;
 }
-
+#liveDemo {
+  text-align: center;
+  font-size: 2em;
+  cursor: pointer;
+  display: inline;
+  padding-right: 10%;
+  padding-left: 20%;
+  color: #002b80;
+}
+#sourceCode {
+  text-align: center;
+  font-size: 2em;
+  cursor: pointer;
+  display: inline;
+  color: #002b80;
+}
 
 /* 
 background scroll effects only work in desktop versions with larger   screen sizes, preventing background images from getting distorted in smaller tablets, phones, etc.  
@@ -466,6 +481,14 @@ background scroll effects only work in desktop versions with larger   screen siz
     font-size: 5vw;
     width: 100%;
   }
+  #liveDemo {
+    padding-left: 5%;
+    padding-right: 10%;
+    font-size: 5.5vw;
+  }
+  #sourceCode {
+    font-size: 5.5vw;
+  }
 }
 
 /*ipad screens*/
@@ -564,6 +587,14 @@ background scroll effects only work in desktop versions with larger   screen siz
   #jobDesc {
     font-size: 3vw;
     width: 100%;
+  }
+  #liveDemo {
+    padding-left: 15%;
+    padding-right: 20%;
+    font-size: 4vw;
+  }
+  #sourceCode {
+    font-size: 4vw;
   }
 }
 
