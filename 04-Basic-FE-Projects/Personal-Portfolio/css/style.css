@@ -498,6 +498,9 @@ background scroll effects only work in desktop versions with larger   screen siz
   .view {
     font-size: 5.5vw;
   }
+  #techUsed {
+    font-size: 5vw;
+  }
 }
 
 /*ipad screens*/
@@ -608,4 +611,8 @@ background scroll effects only work in desktop versions with larger   screen siz
   .view {
     font-size: 4vw;
   }
+  #techUsed {
+    font-size: 4vw;
+  }
 }
+
