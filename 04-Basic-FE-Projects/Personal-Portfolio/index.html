@@ -1,6 +1,4 @@
 <head> 
-  <!-- import Lobster font from google fonts --> 
-  <link href='http://fonts.googleapis.com/css?family=Lobster&effect=font-effect-outline' rel='stylesheet' type='text/css'>
   <!-- import Athiti font from google fonts -->  
   <link href="https://fonts.googleapis.com/css?family=Athiti" rel="stylesheet">
   <!-- importing font awesome icons --> 
@@ -9,7 +7,6 @@
 
 <!-- The scrollable area -->
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-
 <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container-fluid">
@@ -43,7 +40,7 @@
       </div>
       <div class="row text-center">
         <div class="border contact"><a href="#contact" class="scroll"><h2 style="color: white;" id="borderText"><strong> Contact </strong></h2></a></div>
-        <div class="border CV"><h2 style="color: white;" id="borderText"><a href="https://drive.google.com/file/d/0ByZ5dmmIdSHeNWFvWWFkak9WeGc/view" target="_blank"><strong> CV </strong></a></h2></div>
+        <div class="border CV"><h2 style="color: white;" id="borderText"><a href="https://drive.google.com/file/d/0ByZ5dmmIdSHeT0xtQi1nanVWcDg/view" target="_blank"><strong> CV </strong></a></h2></div>
       </div>
     </div>
   </section>
@@ -132,8 +129,7 @@
   
 <!-- Section 4 Project Showcase -->   
   <section class="pageFour" id="portfolio">
-    <h1 class="text-center border pageTitles" style="border-color: white;" id="pageTitle"> PORTFOLIO </h1>
-    <h3 class="text-center"> Click on each project's title for more info* </h3>
+    <h1 class="text-center border pageTitles" style="border-color: white; margin-bottom: 20px;" id="pageTitle"> PORTFOLIO </h1>
     <div class="container">
 
       <!-- first row -->
@@ -142,7 +138,7 @@
           <div class="well">
             <a class="thumbnail">
                <img src="https://github.com/chrisjim316/Personal-Portfolio-/blob/master/Images/TransWorldTrotter.png?raw=true" alt="worldTrotter" class="project-img" style:"width:50%;height:50%;"></a>
-            <h2 id="projectTitle" data-toggle="collapse" data-target="#worldTrotter"><strong>WORLDTROTTER</strong></h2>
+            <h2 id="projectTitle"><strong>WORLDTROTTER</strong></h2>
             <a href="https://github.com/chrisjim316/WorldTrotter" target="_blank" alt="Source Code"><h2 style="display:block;"id="sourceCode"><strong>Source Code</strong></h2></a>
             <div id="worldTrotter" class="collapse projectDescription">
               <ul>
@@ -151,6 +147,8 @@
               </ul>
               <p><strong>Technologies used:</strong> Swift, XCode, UIKit</p>
             </div>
+            <div class="view" id="viewMore1" data-toggle="collapse" data-target="#worldTrotter"><h4> Show Details </h4></div>
+            <div class="view" id="showLess1" data-toggle="collapse" data-target="#worldTrotter"><h4> Hide Details </h4></div>
           </div>
         </div>   
         <div class="col-md-6">
@@ -160,7 +158,7 @@
               <img src="https://user-images.githubusercontent.com/26378494/28245913-80f66320-6a43-11e7-871d-882421d52e7c.gif" alt="cardGame-win" class="project-img">
               <img src="https://user-images.githubusercontent.com/26378494/28245909-7f28beee-6a43-11e7-8596-313a64bc82d2.JPG" alt="cardGame-lose" class="project-img">
             </a>
-            <h2 id="projectTitle" data-toggle="collapse" data-target="#cardGame"><strong>SOLITAIRE CARD GAME</strong></h2>
+            <h2 id="projectTitle"><strong>SOLITAIRE CARD GAME</strong></h2>
             <a href="https://github.com/chrisjim316/ThirteensCardGame" target="_blank" alt="Source Code"><h2 id="sourceCode" style="display:block;"><strong>Source Code</strong></h2></a>
             <!-- collapsible projectDescription -->
             <div id="cardGame" class="collapse projectDescription">
@@ -174,6 +172,8 @@
               </ul>
               <p><strong>Technologies used:</strong> Java, BlueJ, JFrame, ActionListener</p>
             </div>
+            <div class="view" id="viewMore2" data-toggle="collapse" data-target="#cardGame"><h4> Show Details </h4></div>
+            <div class="view" id="showLess2" data-toggle="collapse" data-target="#cardGame"><h4> Hide Details </h4></div>
           </div>
         </div>
       </div>
@@ -184,7 +184,7 @@
           <div class="well">
             <a class="thumbnail">
               <img src="https://github.com/iam-chrisjim/Images/blob/master/RandomQuote/thumbnail.JPG?raw=true" alt="Random Quote Generator" class="project-img"></a>
-            <h2 id="projectTitle" data-toggle="collapse" data-target="#random"><strong>RANDOM QUOTE GENERATOR</strong></button></h2>
+            <h2 id="projectTitle"><strong>RANDOM QUOTE GENERATOR</strong></button></h2>
             <a href="https://codepen.io/liljimbos/full/JydZJX/" target="_blank" alt="Live Demo"><h2 id="liveDemo"><strong>Live Demo</strong></h2></a>
             <a href="https://codepen.io/liljimbos/pen/JydZJX" target="_blank" alt="Source Code"><h2 id="sourceCode"><strong>Source Code</strong></h2></a>
             <!-- collapsible projectDescription -->
@@ -196,13 +196,15 @@
               </ul> 
               <p><strong>Technologies used:</strong> HTML5, CSS, JavaScript, jQuery, Bootstrap</p>
             </div>
+            <div class="view" id="viewMore3" data-toggle="collapse" data-target="#random"><h4> Show Details </h4></div>
+            <div class="view" id="showLess3" data-toggle="collapse" data-target="#random"><h4> Hide Details </h4></div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="well">
             <a class="thumbnail">
               <img src="https://github.com/chrisjim316/Local-Weather-App-/blob/master/Images/NEWthumbnail.JPG?raw=true" alt="Local Weather App" class="project-img"></a>
-            <h2 id="projectTitle" data-toggle="collapse" data-target="#weather"><strong>LOCAL WEATHER APP</strong></h2>
+            <h2 id="projectTitle"><strong>LOCAL WEATHER APP</strong></h2>
             <a href="https://codepen.io/liljimbos/full/dzbJqR/" target="_blank" alt="Live Demo"><h2 id="liveDemo"><strong>Live Demo</strong></h2></a>
             <a href="https://codepen.io/liljimbos/pen/dzbJqR" target="_blank" alt="Source Code"><h2 id="sourceCode"><strong>Source Code</strong></h2></a>
             <!-- collapsible projectDescription -->
@@ -214,6 +216,8 @@
               </ul>
               <p><strong>Technologies used:</strong> HTML5, CSS, JavaScript, jQuery, Bootstrap, Geolocation/Weather API</p> 
             </div>
+            <div class="view" id="viewMore4" data-toggle="collapse" data-target="#weather"><h4> Show Details </h4></div>
+            <div class="view" id="showLess4" data-toggle="collapse" data-target="#weather"><h4> Hide Details </h4></div>
           </div>
         </div>
       </div>
@@ -224,20 +228,22 @@
           <div class="well">
             <a class="thumbnail">
               <img src="https://user-images.githubusercontent.com/30268174/28666035-58a64be8-72f8-11e7-995d-f38e10a342b1.png" alt="Twitchtv JSON API" class="project-img"></a>
-            <h2 id="projectTitle" data-toggle="collapse" data-target="#twitchtv"><strong>Twitchtv JSON API</strong></button></h2>
+            <h2 id="projectTitle"><strong>Twitchtv JSON API</strong></button></h2>
             <a href="https://user-images.githubusercontent.com/26378494/28362708-03cd7e14-6cb0-11e7-90dd-1fd9b26f64f8.png" target="_blank" alt="Live Demo"><h2 id="liveDemo"><strong>Live Demo</strong></h2></a>
             <a href="https://user-images.githubusercontent.com/26378494/28362708-03cd7e14-6cb0-11e7-90dd-1fd9b26f64f8.png" target="_blank" alt="Source Code"><h2 id="sourceCode"><strong>Source Code</strong></h2></a>
             <!-- collapsible projectDescription -->
             <div id="twitchtv" class="collapse projectDescription">
               <p class="text-center"> Under Construction </p> 
             </div>
+            <div class="view" id="viewMore5" data-toggle="collapse" data-target="#twitchtv"><h4> Show Details </h4></div>
+            <div class="view" id="showLess5" data-toggle="collapse" data-target="#twitchtv"><h4> Hide Details </h4></div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="well">
             <a class="thumbnail">
               <img src="https://raw.githubusercontent.com/chrisjim316/freeCodeCamp-/master/Assets/Images/Wikipedia%20Viewer/Images/thumbnail.JPG" alt="Wikipedia Searcher" class="project-img"></a>
-            <h2 id="projectTitle" data-toggle="collapse" data-target="#wiki"><strong>Wikipedia Search</strong></h2>
+            <h2 id="projectTitle"><strong>Wikipedia Search</strong></h2>
             <a href="https://codepen.io/liljimbos/full/GvogyR" target="_blank" alt="Live Demo"><h2 id="liveDemo"><strong>Live Demo</strong></h2></a>
             <a href="https://codepen.io/liljimbos/pen/GvogyR" target="_blank" alt="Source Code"><h2 id="sourceCode"><strong>Source Code</strong></h2></a>
             <!-- collapsible projectDescription -->
@@ -248,6 +254,8 @@
               </ul>
               <p><strong>Technologies used:</strong> HTML5, CSS, JavaScript, jQuery, Bootstrap, MediaWiki API</p>   
             </div>
+            <div class="view" id="viewMore6" data-toggle="collapse" data-target="#wiki"><h4> Show Details </h4></div>
+            <div class="view" id="showLess6" data-toggle="collapse" data-target="#wiki"><h4> Hide Details </h4></div>
           </div>
         </div>
       </div>
@@ -258,13 +266,15 @@
           <div class="well">
             <a class="thumbnail">
               <img src="https://github.com/iam-chrisjim/Images/blob/master/Tic%20Tae%20Toe/thumbnail.png?raw=true" alt="Tic Tac Toe" class="project-img"></a>
-            <h2 id="projectTitle" data-toggle="collapse" data-target="#ticTacToe"><strong>Tic Tae Toe</strong></button></h2>
+            <h2 id="projectTitle"><strong>Tic Tae Toe</strong></button></h2>
             <a href="https://user-images.githubusercontent.com/26378494/28362708-03cd7e14-6cb0-11e7-90dd-1fd9b26f64f8.png" target="_blank" alt="Live Demo"><h2 id="liveDemo"><strong>Live Demo</strong></h2></a>
             <a href="https://user-images.githubusercontent.com/26378494/28362708-03cd7e14-6cb0-11e7-90dd-1fd9b26f64f8.png" target="_blank" alt="Source Code"><h2 id="sourceCode"><strong>Source Code</strong></h2></a>
             <!-- collapsible projectDescription -->
             <div id="ticTacToe" class="collapse projectDescription">
               <p class="text-center"> Under Construction </p> 
             </div>
+            <div class="view" id="viewMore7" data-toggle="collapse" data-target="#ticTacToe"><h4> Show Details </h4></div>
+            <div class="view" id="showLess7" data-toggle="collapse" data-target="#ticTacToe"><h4> Hide Details </h4></div>
           </div>
         </div>
         <div class="col-md-6">
@@ -272,7 +282,7 @@
             <a class="thumbnail">
               <img src="https://github.com/iam-chrisjim/Amazon-Book-Seller/blob/master/Images/titlePage.JPG?raw=true" alt="Amazon Book Seller" class="project-img">
               <img src="https://github.com/iam-chrisjim/Amazon-Book-Seller/blob/master/Images/searchFilter2.gif?raw=true" alt="Amazon Book Seller" class="project-img"></a>
-            <h2 id="projectTitle" data-toggle="collapse" data-target="#AmazonBookSeller"><strong>Amazon Book Seller</strong></h2>
+            <h2 id="projectTitle"><strong>Amazon Book Seller</strong></h2>
             <a href="http://iamchrisjim.com/Amazon-Book-Seller/" target="_blank" alt="Live Demo"><h2 id="liveDemo"><strong>Live Demo</strong></h2></a>
             <a href="https://codepen.io/liljimbos/pen/JyEEVQ" target="_blank" alt="Source Code"><h2 id="sourceCode"><strong>Source Code</strong></h2></a>
             <!-- collapsible projectDescription -->
@@ -284,6 +294,8 @@
               </ul>
               <p><strong>Technologies used:</strong> HTML5, CSS, JavaScript, jQuery, Bootstrap, Amazon.com</p>   
             </div>
+            <div class="view" id="viewMore8" data-toggle="collapse" data-target="#AmazonBookSeller"><h4> Show Details </h4></div>
+            <div class="view" id="showLess8" data-toggle="collapse" data-target="#AmazonBookSeller"><h4> Hide Details </h4></div>
           </div>
         </div>
       </div>
