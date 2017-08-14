@@ -369,6 +369,12 @@ footer {
   display: inline;
   color: #002b80;
 }
+.view {
+  text-align: center;
+  font-size: 2em;
+  cursor: pointer;
+  color: #002b80; 
+}
 
 /* 
 background scroll effects only work in desktop versions with larger   screen sizes, preventing background images from getting distorted in smaller tablets, phones, etc.  
@@ -483,10 +489,13 @@ background scroll effects only work in desktop versions with larger   screen siz
   }
   #liveDemo {
     padding-left: 5%;
-    padding-right: 10%;
+    padding-right: 14%;
     font-size: 5.5vw;
   }
   #sourceCode {
+    font-size: 5.5vw;
+  }
+  .view {
     font-size: 5.5vw;
   }
 }
@@ -596,5 +605,7 @@ background scroll effects only work in desktop versions with larger   screen siz
   #sourceCode {
     font-size: 4vw;
   }
+  .view {
+    font-size: 4vw;
+  }
 }
-
