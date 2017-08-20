@@ -14,7 +14,7 @@ This repository serves to keep a record of every project I created and every les
 * [07-Basic-Algorithm-Scripting](https://github.com/chrisjim316/freeCodeCamp-/tree/master/07-Basic-Algorithm-Scripting)
 * [08-JSON-APIs-Ajax](https://github.com/chrisjim316/freeCodeCamp-/tree/master/08-JSON-APIs-Ajax)
 * [09-Intermediate-FE-Projects](https://github.com/chrisjim316/freeCodeCamp-/tree/master/09-Intermediate-FE-Projects/Local%20Weather%20App)
-* 10-Intermediate-Algorithm-Scripting
+* [10-Intermediate-Algorithm-Scripting](https://github.com/chrisjim316/freeCodeCamp-/tree/master/10-Intermediate-Algorithm-Scripting)
 * 11-Advanced-Algorithm-Scripting
 * 12-Advanced-FE-Projects
 * My Front End Development Certification
