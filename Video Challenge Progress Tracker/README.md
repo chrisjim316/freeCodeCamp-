@@ -64,6 +64,10 @@ There are multiple choice questions after every video challenge for revision and
   - Additionally, I could view information(structured data) returned from an API
 * Chrome Dev Tools: Summary
   - Device mode allows you to view your page in different sizes of screens with different network connections.
+
+### Big O Notation: 
+* Big O Notation: What It Is and Why You Should Care
+* Big O Notation: A Few Examples 
   
 [Full map](https://www.freecodecamp.org/map) of the FCC curriculum. 
 
