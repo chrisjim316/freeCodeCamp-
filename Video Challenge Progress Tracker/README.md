@@ -62,8 +62,9 @@ There are multiple choice questions after every video challenge for revision and
 * Chrome Dev Tools: Console
   - This panel allows me to view raw or structured data by using standard JS statements and console-specific commands
   - Additionally, I could view information(structured data) returned from an API
-
-
+* Chrome Dev Tools: Summary
+  - Device mode allows you to view your page in different sizes of screens with different network connections.
+  
 [Full map](https://www.freecodecamp.org/map) of the FCC curriculum. 
 
 Visit [MyWiki](https://github.com/chrisjim316/freeCodeCamp-/wiki/Video-Challenges-Progress-Tracker).
